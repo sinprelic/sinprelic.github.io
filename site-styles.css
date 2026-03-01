@@ -1,0 +1,636 @@
+body {
+    font-family: "Patrick Hand SC", sans-serif;
+    background: #111;
+    /* background-image: url("bg.png");
+    background-repeat: repeat;
+    background-size: auto; */
+    color: #f5f5f5;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    }
+    
+img {
+    /*  transition: opacity 0.2s ease; */
+    transition: transform 0.2s ease;
+    } 
+      
+img:hover {
+    /*    opacity: 0.8; */
+    transform: scale(1.02);
+    }
+
+section {
+    font-size: 1rem;
+    background: #1a1a1a;
+    border-left: 1px solid rgba(255,191,150,0.05); 
+    border-top: 1px solid rgba(200,200,30,0.05);
+    padding-left: 20px; 
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    margin-bottom: 0.75rem; /* used to be 20px; duplicate here*/
+    padding-top: 2px;
+    }
+    
+h1, h2, h3 {
+    font-family: "Patrick Hand SC", sans-serif;
+    letter-spacing: 0.05em;
+    }
+    
+h1, h3 {
+    color: #ffbf00;
+    }
+    
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    }
+    
+a {
+    color: #ffe680;
+    text-decoration: none;
+    }
+    
+a:hover {
+    text-decoration: underline;
+    }
+
+code {
+    background:#000;
+    padding:2px 4px;
+    border-radius:4px;
+    }
+
+mark {
+    background-color: #999; /* GitHub gray */
+    color: black; /* GitHub text color */
+    padding: 0px 4px;
+    border-radius: 6px;
+    font-size: 1.0em;
+    border: 1px solid #ffbf00; /* subtle border */ 
+     }
+
+  .no-bullets {
+    list-style: none;
+    padding-left: 0; /* removes indent */
+    margin-left: 0; 
+    }
+
+  .mainfont {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0em;  
+    }
+    
+  .center-section {
+    text-align: center;
+    }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    }
+  .container-footer {
+    max-width: 900px;
+    margin: auto;
+    }
+
+  .emoji { 
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    font-size: 1em;
+    }
+    
+  .light-section {
+    background-color: rgba(255,255,255,0.1);
+    border-top: 1px solid #444;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.00rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    }
+  .light-section-half {
+    background-color: rgba(255,255,255,0.05);
+    border-top: 1px solid #444;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.00rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    }
+
+    
+  .side-section {
+    display: flex; 
+    align-items: flex-start; /* flex-start = prevents image from moving */ /* center = vertically align image + text */ 
+    gap: 20px; /* space between image and text */ 
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    } 
+    
+  .side-photo { width: 25%; /* one quarter of the section */ 
+    max-width: 200px; /* optional: prevents huge images */ 
+    border-radius: 8px; /* optional: rounded corners */ 
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    } 
+    
+  .side-text { 
+    width: 75%; /* remaining space */ 
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    }
+    
+  .side-divider {
+    width: 1px;
+    background-color: rgba(255,255,255,0.1); /* subtle line */
+    align-self: stretch; /* makes it full height of the section */
+    }
+
+  .hz-divider-main {
+    height: 0.1px;
+    background-color: #ffbf00; /* same subtle line */
+    width: 100%; /* full width */
+    margin: 2rem 0; /* optional spacing */
+    }
+
+    .hz-divider {
+    height: 1px;
+    background-color: rgba(255,255,255,0.1); /* same subtle line */
+    width: 100%; /* full width */
+    margin: 2rem 0; /* optional spacing */
+    }
+
+  .hz-divider-half {
+    height: 1px;
+    background-color: rgba(255,255,255,0.1); /* same subtle line */
+    width: 50%; /* full width */
+    margin: 2rem auto; /* optional spacing */
+    }
+
+  .my_highlight_yellow {
+    background-color: rgba(255,255,255,0.1);
+    border: 0.1px solid #ffbf00;
+    padding: 0px 1px;
+    border-radius: 4px;
+    }
+    
+  .my_highlight_blue {
+    background-color: rgba(255,255,255,0.1);
+    border: 0.1px solid #00bfff;
+    padding: 0px 1px;
+    border-radius: 4px;
+    }
+    
+  .my_highlight_green {
+    background-color: rgba(255,255,255,0.1);
+    border: 0.1px solid #bfff00;
+    padding: 0px 1px;
+    border-radius: 4px;
+    }
+    
+  .my_highlight_pink {
+    background-color: rgba(255,255,255,0.1);
+    border: 0.1px solid #ff00bf;
+    padding: 0px 1px;
+    border-radius: 4px;
+    }
+
+  .my_highlight_teal {
+    background-color: rgba(255,255,255,0.1);
+    border: 0.1px solid #00bfbf;
+    padding: 0px 1px;
+    border-radius: 4px;
+    }
+    
+  .social a {
+    font-size: 26px;
+    /* color: #f5f5f5; */
+    }
+  .social a i {
+    transition: transform 0.2s ease, color 0.2s ease;
+    } 
+  .social a:hover i {
+    color: #ffbf00;
+    transform: scale(1.25) rotate(8deg);
+    }
+
+  .icon-fix {
+    position: relative;
+    top: 4px;   /* move icon down */
+    }
+    
+  .icon-fix-half {
+    position: relative;
+    top: 3px;   /* move icon down */
+    }
+    
+  .toc {
+    background: rgba(255,255,255,0.4); 
+    padding: 15px; 
+    border-radius: 8px; 
+    width: fit-content; 
+    margin-bottom: 20px; 
+    } 
+    
+  .toc ul {
+    margin: 0; 
+    padding-left: 20px; 
+    } 
+    
+  .toc a {
+    text-decoration: none; 
+    color: #333; 
+    } 
+    
+  .toc a:hover {
+    text-decoration: underline;
+    }
+    
+  .boxed { 
+    padding-top: 10px; /* smaller top padding */ 
+    padding-right: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px; 
+    }
+    
+  .float-img {
+    float: left; /* or right */ 
+    width: 50%; /* image takes half the section */ 
+    margin: 0 20px 20px 0;
+    }
+    
+  .fa-bullets {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    }
+  .fa-bullets li {
+    position: relative;
+    padding-left: 1.6rem; /* space for the icon */
+    margin-bottom: 0.6rem; /* adjust to taste */
+    }
+  .fa-bullets li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* solid style */
+    content: "\f51c"; /* person-chalkboard icon */
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    font-size: 0.8rem;
+    color: #ffbf00; /* adjust to your theme */
+    }
+
+   .fa-awards {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    }
+  .fa-awards li {
+    position: relative;
+    padding-left: 1.6rem; /* space for the icon */
+    margin-bottom: 0.6rem; /* adjust to taste */
+    }
+  .fa-awards li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* solid style */
+    content: "\f559"; /* person-chalkboard icon */
+    position: absolute;
+    left: 0.25rem;
+    top: 0.25rem;
+    font-size: 0.8rem;
+    color: #ffbf00; /* adjust to your theme */
+    }   
+
+/* Remove default arrow */
+details.collapse summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+details.collapse summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom Font Awesome arrow (closed state) */
+details.collapse summary::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;          /* solid style */
+  content: "\f054";          /* fa-chevron-right */
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.25s ease;
+  font-size: 0.9rem;
+  color: #ffbf00;/* adjust to your theme */
+  opacity: 0.5;
+}
+
+/* Rotate arrow when open */
+details.collapse[open] summary::before {
+  transform: rotate(90deg);
+}
+
+
+.swap {
+  position: relative;
+  width: 300px;
+}
+.swap img {
+  position: absolute;
+  inset: 0;
+  transition: opacity .4s ease;
+}
+.swap .back {
+  opacity: 0;
+}
+.swap:hover .back {
+  opacity: 1;
+}
+.swap:hover .front {
+  opacity: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  color: #ffbf00; 
+}
+
+.sup {
+  font-size: 0.7em;
+  position: relative;
+  top: -0.4em;   /* adjust until it visually matches your font */
+  line-height: 0; /* optional: prevents the span from affecting line height */
+}
+
+
+.blockexplanation {
+  background: rgba(0,0,0,0.25);
+  border-left: 2px solid #ffbf00;
+  color: lightgray;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  }
+  
+.blockexplanation-black {
+  background: rgba(0,0,0,0.25);
+  border-left: 2px solid #000000;
+  color: lightgray;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  }
+
+
+
+
+.vlined-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space between heading and line+content */
+}
+
+/* Layout for the vertical line + content */
+.vline-layout {
+  display: flex;
+  align-items: stretch; /* ensures the line spans the full content height */
+  gap: 1rem; /* space between line and content */
+}
+
+/* The vertical line itself */
+.vline {
+  width: 1px;
+  background-color: #ffbf00;
+  opacity: 0.1; /* matches your subtle divider */
+}
+
+/* Content to the right of the line */
+.vline-content {
+  flex: 1;
+}
+
+
+/* TESTING SLIDESHOW IDEA */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* adjust */
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  /* width: 100%; this must remain commented out to prevent page jumping and the box stretching */
+  height: 100%;
+  max-height: 400px; /* <-- set your desired max height */
+  object-fit: contain; /* keeps aspect ratio, no cropping */
+  margin: 0 auto;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.prev { left: 0.5rem; }
+.next { right: 0.5rem; }
+
+
+/* test header -----------------------*/
+.site-header {
+  /* background-color: #000000; */
+  padding: 0 0 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 1rem;
+}
+.header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.site-nav a {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.site-nav a:hover {
+  opacity: 1;
+}
+.site-nav .site-nav-title { /* FIX: make 'home' #ffbf00 */ 
+  color: #ffbf00;
+  opacity: 0.7;
+} 
+
+/* FOOTER ----------------------------- */
+.site-footer {
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.8rem;
+  color: #555;
+}
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* keeps it responsive */
+  gap: 1rem;
+}
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+.footer-center {
+  color: #f5f5f5;
+  opacity: 0.5;
+  text-align: center;
+  flex: 1; /* allows it to stay centered even if icons differ in width */
+}
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* zoomable clickable img for posters */
+.clickable-img {
+  cursor: zoom-in;
+  max-width: 100%;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: zoom-out;
+}
+
+/* cv part */
+.cv-entry {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #444;
+}
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.2rem;
+}
+.cv-entry-years {
+  text-align: right;
+  color: yellowgreen;
+  font-variant-numeric: tabular-nums;
+}
+.cv-entry-title {
+  color: yellowgreen;
+}
+.cv-entry-subtitle-1 {
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: lightseagreen;
+  line-height: 1.5;
+}
+.cv-entry-subtitle-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  color: #999;
+  line-height: 1.5;
+}
+.cv-entry-bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+.cv-entry-bullets li {
+  margin-bottom: 0.2rem;
+}
+
+
+/* some education stuff */
+.degree-entry {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr; /* left fixed, right flexible */
+  gap: 1.2rem;
+  padding: 0.5rem 0rem;
+  /* border-bottom: 1px solid var(--divider, #ddd); */
+}
+.degree-left {
+  font-weight: 600;
+  color: black;
+  letter-spacing: 0.03em;
+}
+.degree-right > div {
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
+/* this for the skills part on cv page */
+.skill-entry {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 0rem;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid black;
+}
+
+.skill-left {
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.skill-right {
+  line-height: 1.45;
+}

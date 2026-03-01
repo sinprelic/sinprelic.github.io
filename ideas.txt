@@ -1,0 +1,88 @@
+
+* add https://linktr.ee/sinprelic
+
+* photo swap on mouse hover - photo swap is of grafitti version
+
+* png-anim ... as in, cycle thru thumbnails of my figures for each paper/thesis ... animate my portfolio to show the various graphs
+
+
+
+
+
+*contacts:
+<i class="fa-brands fa-bluesky"></i>
+<i class="fa-brands fa-battle-net"></i>
+<i class="fa-brands fa-discord"></i>
+<i class="fa-brands fa-paypal"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-mendeley"></i>
+<i class="fa-brands fa-r-project"></i>
+<i class="fa-brands fa-reddit"></i>
+<i class="fa-brands fa-steam"></i>
+<i class="fa-brands fa-stack-overflow"></i>
+<i class="fa-brands fa-stack-exchange"></i>
+<i class="fa-brands fa-twitch"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-zoom"></i>
+
+<i class="fa-brands fa-r-project"></i>
+
+<i class="fa-solid fa-microscope"></i>
+<i class="fa-solid fa-vial"></i>
+<i class="fa-solid fa-flask"></i>
+<i class="fa-solid fa-dna"></i>
+
+<i class="fa-solid fa-book"></i> (for the dissertation)
+<i class="fa-solid fa-diagram-project"></i>
+
+<i class="fa-solid fa-graduation-cap"></i>
+<i class="fa-solid fa-user-graduate"></i>
+
+<i class="fa-solid fa-school"></i>
+<i class="fa-solid fa-building-columns"></i>
+
+<i class="fa-solid fa-person-chalkboard"></i> (presentation)
+<i class="fa-solid fa-chalkboard"></i> (using)
+
+<i class="fa-solid fa-libra"></i>
+
+<i class="fa-solid fa-expand"></i>
+<i class="fa-solid fa-compress"></i>
+
+<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+<i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+
+*above: crossfade icons test? TRY WITH ABOVE TWO ALSO
+HTML
+<button class="toggle">
+<i class="fa-solid fa-plus icon-plus"></i>
+<i class="fa-solid fa-minus icon-minus"></i>
+</button>
+
+CSS
+.toggle {
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+.toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.25s ease;
+}
+.icon-minus {
+  opacity: 0;
+}
+.toggle.expanded .icon-plus {
+  opacity: 0;
+}
+.toggle.expanded .icon-minus {
+  opacity: 1;
+}
+
+<br><br>
+        I like solving problems methodically. Whether I’m <b>optimizing a Linux setup</b> on aging hardware, refining a workflow, or breaking down a strategy in a competitive game, I approach things with structure, curiosity, and a preference for clean, reliable solutions. I enjoy learning new tools, improving systems, and understanding the logic behind how things work.<br><br>
+        Outside of research and technical work, I’m drawn to strategy games, creative projects, and building small digital tools or websites that make life a bit more organized. I value clarity, precision, and practical improvement — and I try to bring that mindset into everything I do.</p>

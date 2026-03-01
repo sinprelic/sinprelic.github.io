@@ -1,0 +1,131 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Patrick Hand SC", sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+      color: #f5f5f5;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 90vmin;
+      height: 90vmin;
+      max-width: 900px;
+      max-height: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(255, 191, 0, 0.05);
+    }
+
+    .quadrant {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.25s ease, transform 0.25s ease;
+      padding: 1.5rem;
+    }
+
+    .quadrant span {
+      font-size: 1.5rem;
+      letter-spacing: 0.06em;
+      text-transform: lowercase;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .quadrant:nth-child(1) { background: #222; }
+    .quadrant:nth-child(2) { background: #252525; }
+    .quadrant:nth-child(3) { background: #272727; }
+    .quadrant:nth-child(4) { background: #2a2a2a; }
+
+    .quadrant:hover {
+      background: #333;
+      transform: scale(0.975);
+      z-index: 1;
+    }
+
+    .center-photo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30vmin;
+      height: 30vmin;
+      max-width: 280px;
+      max-height: 280px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #111;
+      box-shadow: 0 0 0 6px #f5f5f5, 0 18px 40px rgba(0, 0, 0, 0.7);
+      background: #000;
+      z-index: 2;
+    }
+
+    .center-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .wrap { 
+      float: left; /* or right */ 
+      margin: 0 15px 15px 0; /* adds space so text doesn’t touch the image */ 
+      width: 200px; /* optional: control image size */ 
+    }
+
+    /* Optional: small label under the circle */
+.name-tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% - 9vmin), -50%) rotate(-90deg);
+  /* Explanation:
+     - translate left by half width AND orbit offset
+     - translate up by half height
+     - rotate text vertically bottom → top
+  */
+  transform-origin: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  /* text-transform: lowercase; */
+  /* font-variant: small-caps; */
+  opacity: 0.8;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 3; /* <-- ensures it appears in front */
+  color: #000;
+}
+
+
+    @media (max-width: 600px) {
+      .wrapper {
+        width: 100vw;
+        height: 100vw;
+        border-radius: 0;
+      }
+      .center-photo {
+        width: 40vmin;
+        height: 40vmin;
+      }
+      .name-tag {
+        top: calc(50% + 22vmin);
+      }
+    }
