@@ -1,1 +1,0 @@
-# sinprelic.github.io
