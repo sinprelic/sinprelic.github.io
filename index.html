@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.knit</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><i class='fa-solid fa-s'></i> <i class='fa-solid fa-ellipsis-vertical'></i> <i class='fa-solid fa-n'></i></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About Sin</a>
+</li>
+<li>
+  <a href="full-cv.html">CV</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="gallery.html">Gallery</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:sinprelic@protonmail.com">
+    <span class="fa fa-envelope"></span>
+     
+    email
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="sin-prelic-phd" class="section level1">
+<h1>Sin <strong>Prelic</strong>, PhD</h1>
+<hr />
+<div style="text-align: center; margin: 0 auto;">
+<p>Hi! My name is <strong>Sin</strong>.</p>
+<p>I’m a versatile, multidisciplinary <strong>biologist</strong>.</p>
+<div class="hover-swap">
+<p><img src="images/profile.jpg" class="img-normal">
+<img src="images/profileH.jpg" class="img-hover"></p>
+</div>
+<p>I offer several flavors of <strong>personal introduction</strong>.
+The choice is yours!</p>
+</div>
+<p><br></p>
+<div id="pick-your-intro" class="section level4">
+<h4>Pick your intro:</h4>
+<ul class="nav nav-tabs">
+<li class="active">
+<a href="#tab1" data-toggle="tab" aria-expanded="true"> Short intro </a>
+</li>
+<li class>
+<a href="#tab2" data-toggle="tab" aria-expanded="false"> Long intro </a>
+</li>
+<li class>
+<a href="#tab3" data-toggle="tab" aria-expanded="false"> Academic </a>
+</li>
+<li class>
+<a href="#tab4" data-toggle="tab" aria-expanded="false"> Industry </a>
+</li>
+<li class="disabled">
+<a> Introspective intro </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+Other <span class="caret"></span> </a>
+<ul class="dropdown-menu">
+<li>
+<a href="#dropdown1" data-toggle="tab"> Personable intro </a>
+</li>
+<li>
+<a href="#dropdown2" data-toggle="tab"> Pictographic intro </a>
+</li>
+<li>
+<a href="#dropdown3" data-toggle="tab"> Ultrashort intro </a>
+</li>
+<li class="divider">
+</li>
+<li>
+<a href="#dropdown4" data-toggle="tab"> Site deets </a>
+</li>
+</ul>
+</li>
+</ul>
+<div id="myTabContent" class="tab-content">
+<div id="tab1" class="tab-pane fade active in">
+<p><br> Hello there! I’m a biologist with <strong>diverse, international
+research lab experiences</strong> and <strong>broad technical
+training</strong>. I thrive on multidisciplinary projects and enjoy
+tackling complex questions through combined experimental-computational
+approaches. My past research interests span molecular biology,
+neuroscience, ecology and animal behavior, genome biology, cytology,
+microbe physiology and data science. I’m comfortable navigating between
+biological disciplines, bring new perspective and rigor, and strive for
+inventive, original output.</p>
+<p><strong>Professionally,</strong> I’ve worked most recently on the
+molecular cell biology &amp; neuroscience of olfaction at the Max Planck
+Institute for Chemical Ecology (dept. Evolutionary Neuroethology). I’ve
+worked in university, institute and hospital environments, and involve
+myself actively in various projects, often involving science
+communication, teaching, community organization and media production.
+For a little overview, see my <a href="full-cv.html">complete
+CV</a>.</p>
+<p>My research portfolio consists of <strong>scientific
+publications</strong> in expert journals and a variety of
+<strong>presentations</strong> given at specialist conferences across
+the world. I keep a complete list of exemplary
+<strong>articles</strong>, <strong>preprints</strong>,
+<strong>posters</strong> &amp; <strong>talks</strong> I’ve delivered on
+the <a href="research.html">research output</a> page.</p>
+<p>I learn quickly and like many things. Check some out on my random
+little tidbit <a href="gallery.html">gallery</a>.</p>
+</div>
+<div id="tab2" class="tab-pane fade">
+<p><br> I’m a versatile PhD-graduate biologist with extensive
+international lab experience, cross-disciplinary expertise and a
+portfolio of publications in scientific journals and talks at
+international specialist conferences. My career has unfolded many
+disciplines, organisms, and research cultures. My scientific path has
+taken me through molecular cell biology, sensory neuroscience, ecology,
+genome biology, and computational analysis — often weaving these threads
+together in multidisciplinary projects. I enjoy moving between fields,
+learning new techniques quickly, and building bridges between
+experimental and analytical perspectives. This breadth has given me a
+strong foundation in both wet‑lab experimentation and data‑driven
+inquiry, as well as an appreciation for how different scientific
+traditions approach the same biological questions. I feel like I have a
+lot to offer.</p>
+<p>Trained chiefly in molecular cell biology and neuroscience, I now
+have over a decade of experience in various life science research labs,
+including university, institute and hospital environments. I’m
+comfortable navigating between biological disciplines, and personally
+strive for inventive and original output. My work always reflects this
+ethic and cross-disciplinarity. So far, it has spanned areas like
+molecular biology and bioinformatics, cytology, ecology, sensory
+neuroscience, genome biology, epigenetics, molecular technique
+development, animal behavior, microbe physiology and evolution.</p>
+<p>In addition to having spent many years planning and running
+experiments in labs, I’ve led and managed research projects
+(independently and collaboratively), frequently worked with large -omics
+and multidimensional datasets, involved myself in conference
+organization, colleague representation, university course teaching and
+student supervision, designed and tested novel biological probes,
+written many scripts for data analysis, all the while writing and
+illustrating and enjoying getting technical ideas across with clarity
+and elegance.</p>
+<p>In short, I enjoy contributing to environments where
+interdisciplinary thinking is valued — and where learning never really
+stops. I relish in learning, trying things for their own sake, and
+applying my breadth of experience in new contexts.</p>
+</div>
+<div id="tab3" class="tab-pane fade">
+<p><br> I am a published multidisciplinary biologist with research
+experience spanning molecular cell biology, sensory neuroscience,
+ecology, genome biology, and computational analysis. My work integrates
+experimental and data‑driven approaches, with contributions to fields
+such as bioinformatics, cytology, epigenetics, microbe physiology,
+evolution, and animal behavior. I have trained in multiple international
+laboratories, gaining broad methodological expertise and a strong
+foundation in both hypothesis‑driven experimentation and quantitative
+analysis. I am particularly interested in complex biological systems,
+cross‑disciplinary research, and the interface between molecular
+mechanisms, organismal function and applying novel methods.</p>
+</div>
+<div id="tab4" class="tab-pane fade">
+<br>
+<p>
+I’m a versatile biologist with hands‑on experience in molecular and
+cellular biology, neuroscience, and data-driven computational analysis.
+I’ve worked in fast‑paced, international research environments where
+adaptability, technical breadth, and cross‑functional collaboration were
+essential.
+</p>
+<p>
+My background includes bioinformatics, assay development, microscopy,
+genome‑scale analysis and physiology. I’m comfortable writing
+technically, navigating complex datasets, troubleshooting experimental
+workflows, and contributing to multidisciplinary teams, systems and
+projects with attentiveness to detail and demand.
+</p>
+<p>
+I bring a strong foundation in hypothesis‑driven experimentation,
+quantitative analysis, methodological expertise and a practical,
+solution‑oriented mindset. I love working in dynamic teams, and
+communicate elegantly with colleagues, audiences and clients in
+structured, tailored manners.
+</p>
+<p>
+In the world of life science and biotech problems, let’s innovate with
+elegance!
+</p>
+</div>
+<div id="dropdown1" class="tab-pane fade">
+<p><br> My pleasure to oblige :)</p>
+<p>Here’s a little Reader’s Digest about my personal life, so far:</p>
+<p>I was born in Yugoslavia, and raised young in Serbia and later
+Poland. In time for primary school, my family moved to Prague, Czech
+Republic, where the entirety of my primary schooling was at an
+international British school. It was during these formative years I
+played too many sports and wrote poems profusely.</p>
+<p>As a young adult I moved to the Netherlands, where I obtained
+Bachelor and Master degrees in the city of Utrecht, discovering my
+unwavering interest in biology, a field underpinned and peppered with a
+complexity. It was in Utrecht I think I began to refer to my interests
+as broad and multidisciplinary. As I discovered my aptitude within the
+life sciences, I found this area to be particularly rich in
+cross-disciplinary pollination. For me, the exploration of how living
+systems work - from molecules all the way across systems and
+organizations to fully-fledged individual organisms, participating in
+ecospheres and communities, with behaviors and lifestyles to boot - is
+simply unmatched in fulfillment. Biology has allowed me to learning so
+many investigative techniques, about unlikely interconnections across
+disparate topics, about how problems are solved, and also to work with
+people from different scientific backgrounds, with unique strengths,
+employing different tools, within diverse research cultures. I’ve found
+no two biologists truly alike. It simply allows for professional work
+where resourcefulness, insightfulness and endless joys of learning to
+mix and co-exist.</p>
+<p>After a subsequent homecoming, soul-searching and stint in Prague’s
+weird and vibrant art community for a year, I decided to pursue a PhD in
+molecular biology and neuroscience in Jena, Germany, working
+simultaneously on many projects involving fruit flies, neurogenetics and
+olfactory biology at the Max Planck Institute for Chemical Ecology.</p>
+<p>I worked many years on studying the sense of smell, and carving out
+my own niche of understanding what role the poorly-understood
+<strong>non-</strong>neuronal cells might play in the sensory process. I
+became familiar with different sensory systems across the animal
+kingdom. During these research years, an incidental pandemic swept the
+globe. Upon infection, most of us were familiarized with its signature
+symptom: a sudden loss of smell, or <em>anosmia</em>, later confirmed to
+arise from viral entry into non-neuronal cells in our noses, disrupting
+our sensory ability to perceive airborne chemicals. I was able to shed
+some insights and publish a few works describing how non-neuronal cells
+function and co-operate with neurons, ultimately allowing creatures to
+smell the world. Research science in this field is a wild ride. I
+completed my doctorate with flying colors and now pose myself for
+another wild turn of chance and irony, as I look for the next challenge
+and playground.</p>
+<p>Aside from career, I take on hobbies plentifully. I self-describe as
+a musician. I play the bass, play in bands and listen to music
+voraciously. I also enjoy sports and games; I grew up playing football
+competitively, developed into a chess player, and try to keep up with
+the kaleidoscope of play and games out there. I love producing film and
+videos, organizing barbecue parties and relaxing in nature.</p>
+<p>Let’s see where career and life take me! As ever, I remain open to
+opportunities, job offers and a <a
+href="mailto:sinprelic@protonmail.com">chat</a>.</p>
+<p>Thanks for reading!</p>
+</div>
+<div id="dropdown2" class="tab-pane fade">
+<p><br> 😴 → ☕ → ✨ → 🔬 → 🧬🎵 → 📚 → 🧠 → 🤷 → ✨ → 🧪 → 🤷 → 🎨🎵 →
+🧩 → 😴</p>
+<p>or how about</p>
+<pre class="text"><code>        sssssssssssss
+     sss             sss
+   ss   sin       sin   ss
+  ss       sin   sin      ss
+  ss         sin          ss
+  ss   sssssssssssssss    ss
+   ss  s   sin sin   s   ss
+     sss             sss
+        sssssssssssss</code></pre>
+<p>or worse yet…</p>
+<pre style="font-size: 0.75rem;">
+                                                              ░                    ░ ░░░░░  ░   ▒▓▒▓
+                                                    ░░              ▒░░▒▓▒▓██░░      ░▒░▓▒█░ ▒▒ ░▒░ 
+  ░▒▒                       ░               ░                       ▒▓▒█░░ ▒░▓░   ░█▓▒█▒░█▒  ░██▒░  
+ █  ░▒░                       ░░░        ░▒▒▓▓░░░░      ░░░░░▓▒▒████░  ░      ██░░░░  ░ ░█░ ▒▒░ ▓▓░░
+                             ░         ░         ░▓▒▒▒░░░▓▒░░░▒▒▒░░ ░░▓░       ░░░░▓░       ░█▒░░▒▓ 
+ ▒░▒                       ░░   ░░░  ░     ░████  ░░░░ ░  ░░░░ ░░░  ░░▓██▓▓░░  ▒░ ▒███   ░█     ░▒█ 
+ ░░░                      ░░      ░░░   ░       ░░     ███▒▒▓▓▒▓▓██▓▓▓▒▒░░▒██░    ░▒▒ ░▒▒██  ░      
+       ▓                 ▒░░░░░░ ░▒▒░  ░▓▓████▓▒  ▒▓▒ ▒   █▒█▓▓▓▓█▓░░░▒░░░▒▓▒░░  ░░     ░  ░█       
+                      ░      ░░░▒░   ▒▒▒▒▒▓████████░▒█  ▓    ░░▒▓▓░░░░▒▓▒▓▓▒░░████         ░██      
+                    ░░       ▓▒▒░     ▒▒█████████▓▒    ▒████     ░░░▒▓▓▓▓░▒███▒       ▒███████      
+                   ░░   ░░  ▓▓▓░ ░███████▓▒██▒░          ░ ░ █ █▓▓▒▒▒░░░░▒  ▓        ██▒▒▒▓████████▓
+                      ░░░         ██████                  ██    ▒░▒▓▓▓░░░▓▒░▓█         ▓██▓███▓▓▓██▓
+                     ░░░░ ░    ░░▒██▓▒█▓                  █  █▓░░▒░▒▓▒ ▒▒░█▓██▓         █▓░░███████░
+ ░▒▒░░ ▒▒         ░░▒▓  ░ ▓███▓▒░ █▓███   ▒██▓   ▓███░    ███▓   ▓░░░░░▒▒█░  ░▒         ▒▒▒▓█  ░  █▒
+ ░     ▒             █░ ░ ░░░░░░░ ▒▒▓░ █ ▒  ██▒▒▒▒▓░ ▒█▓ ▓███ █▒ ░   ░░▒▓ ░   █ ▒       █▓▓▓█       
+ ░                  ░  ░▓░░░░▒▓▓▒░▒███░█ █▓██░  ░░███▓░▓  ▓▒█░▓█▒  ░░░▓▓██▓   ▓█░       ██████ ████ 
+ █▒                     ▒▒▒▒▒▒░░░▒░░▒█░      ░             ████▓▓░█▓░▒▓▓▓▓░██  ▓▓      ▓█████████   
+   ░███▓░             ░▒░▒▒▒▒░░░░░░  ░█            ░         █ ░░▒▒▒▓▓██▓▓▓██   █  █   ░█▓██░   █   
+░  ▒█▓  ░        ░░░▓███▓████▒▒▒▒░ ░      ░▓ ███████▓          ██▓▓▓░▒░▒▓▓▓▓█░████░ ▒█    ░██ ▓ █▒  
+░░                █▓        ░░░░░░░▒▓█  ░▓     ▒     ▓█░     ░░▒▒▒▓▓▒▒▒▓▒▓▓▓▓█▒▓▓▓▒ ░   ████    ▓░  
+░  ░                 ░          ░░   ░▓   ░██████████  ░   ██░░░░░▒▓▓▓▓▒▒▒▓█▓▓▓▓███▓█     ██    ██  
+    ░                ▓████▒▒░░░░░░░░░██              ░░    █░ ░▒░▒▒▒▓██▓▓▓▓▓▓▓▓██████            ██▓
+       ░▓▓         ░▓██▓▒░░░░░▒░░░     ░░▒░      ░    ░   ▓█░░░▒▓███▓░░░▒▓▒▓▒▓▒▓██░░█▒    █      █▓░
+   ▒▒              ▒▓▓░       ░░░░░       ░                █▒▓▓▓█▓▓▒░░ ░▒▓█████▒██░ ░    ██      █░░
+    ░               ░ ░░░░░  ░░░▓▓▓▓░░     ░░▓▓██▓        ▒██▓███░░▓████▓▒▓░    ░█░ ░█ ████  ▓  ██  
+                  ░▓▒░▒▒▒▒░░░▒▒▒    ░  ░▒▓  ░░░  ░▒ ▒      █▓░░ ░░░▒▒▓█████░  ░ ▒█   ▓████████████░░
+ ▒░          ░▓█████▓▒░ ░░░░▒▒▒▒░░ ░▒░░▒██    ░▒▒▓░           █████▓▓▓▓▓▓▓▓▓▒▒▓████▓███▓▓██▒░▓▓██▓░▒
+ ██▓███░▒██   ██▓░░░░░░░░░░▒░░▓▓█▓▓▓████         ░               ▓██████▓▓░░ ▒▓▓████▓▓████▒░░█▓█████
+    ▓░░░  ░▓░    ▒▒▒░░░▒▒░▒▒▒▒▒▒▓████     ░    ░   ░        ▓         ▒██████▓▓████▓▓█▓██████▓░▓█▓░░
+░█  ░        ▓░  ░███▒▒▒░▓█████▓          ░     ░░░  ░░                       ░ ░██▓▒▓▒▓█▓▓█▒ ░▒█   
+ ░▓░         ▒░  ▒▓███████         ░            ░ ░  ░░░▒▒█        ░   ░          ███▓▒▓██▒░░░▓▓▓▒░░
+   ░ ░ ░░░░░ ░▒   ░ ░██          ░░         ▒░░ ░░░░▒▒▓█▓                ░          █████▓▓▒██████▓▒
+▒▒  ░▒░   ░   ░░░░▒██                          ░▓▓▓▒░░                     ░          █████░   ▒██▓░
+░█▒░░▒▒▒░░░▒▒░░░░▒██                                                                  ███▓░ ▓███▓░▒▒
+ ███▒█▒░░░░░▒▓▒░▒█▒          ░░                                                  ░     ██░░▒▓▒░░  ▓▒
+ ░▓░░░░░        ░                                                                           ░▒▓▓    
+</pre>
+<p>or rather unforgivably, an explanation of logo and favicon
+choice:</p>
+<pre>
+<img src="images/favico-expl.png" style="width:400px;">
+</pre>
+<p>best to stop while ahead.</p>
+</div>
+<div id="dropdown3" class="tab-pane fade">
+<p><br> Former
+<abbr title="Doctoral researcher/scientist at Max Planck Institute for Chemical Ecology">MPICE
+DR</abbr>,
+<abbr title="International Max Planck Research School & Friedrich Schiller University Jena">IMPRS
+&amp; FSU</abbr> grad with 5 published articles on
+<abbr title="Molecular, cellular biology and neuroscience">molcellneurobio</abbr>
+of <i>Drosophila</i> sensory system.</p>
+<p>Prior educated/trained @ <abbr title="Utrecht University">UU</abbr>
+in life science research on various
+<abbr title="(involving fungi, STARR-seq development, microtubule dynamics, nanobodies, biomolecular docking sims, biotech concepts, etc.)">projects</abbr>
+at uni, hospital, institute depts.</p>
+<p>Rich <a href="research.html">research history</a>, does <a
+href="full-cv.html">many things</a>. Enjoys <code>tl;dr</code> and
+<code>BLUF</code> practices.</p>
+</div>
+<div id="dropdown4" class="tab-pane fade">
+<p><br> My v2.0 website was hand-written in 2026 using RStudio/vscodium
+in <code>R</code>, <code>Rmd</code>, vanilla <code>html</code>,
+<code>css</code> and <code>js</code> with Bootstrap v3.3.5. Based on a
+customization of the bootswatch theme <i>united</i>. To replicate, I
+recommend putting <code>rmarkdown::render_site()</code> in your search
+engine of choice! Hosted on Github Pages.</p>
+</div>
+</div>
+<hr />
+</div>
+<div id="contact-me" class="section level4">
+<h4>Contact me:</h4>
+<p><span style="font-size: 2rem;">
+<a href="mailto:sinprelic@protonmail.com" style="font-size: 2rem;">
+<i class="fa-solid fa-envelope"></i></a></span>
+<a href="mailto:sinprelic@protonmail.com" style="position: relative; top: -3px;">sinprelic@protonmail.com</a></p>
+</div>
+<div id="socials" class="section level4">
+<h4>Socials:</h4>
+<div style="font-size: 2.5rem;">
+<p><a href="https://www.linkedin.com/in/sinprelic/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://orcid.org/0000-0002-6494-7389" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
+<a href="https://www.researchgate.net/profile/Sinisa-Prelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-researchgate"></i></a>
+<a href="https://scholar.google.com/citations?user=8UJ2xZQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>
+<a href="https://loop.frontiersin.org/people/1360472/overview" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microscope"></i></a>
+<a href="https://github.com/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+<a href="https://linktr.ee/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linktree"></i></a></p>
+</div>
+<hr />
+<div style="text-align: right;">
+<a href="#top" class="btn btn-link">back to top</a>
+</div>
+</div>
+</div>
+
+<script async src="https://integration-badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
+<script>
+$(function () {
+  var $target = $('#details1');
+  var $btn = $('[data-target="#details1"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details2');
+  var $btn = $('[data-target="#details2"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details3');
+  var $btn = $('[data-target="#details3"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details4');
+  var $btn = $('[data-target="#details4"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details5');
+  var $btn = $('[data-target="#details5"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details6');
+  var $btn = $('[data-target="#details6"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details7');
+  var $btn = $('[data-target="#details7"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details8');
+  var $btn = $('[data-target="#details8"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+<script>
+$(function () {
+  var $target = $('#details9');
+  var $btn = $('[data-target="#details9"]');
+
+  $target.on('shown.bs.collapse', function () {
+    $btn.text('Hide');
+  });
+
+  $target.on('hidden.bs.collapse', function () {
+    $btn.text('Show');
+  });
+});
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
