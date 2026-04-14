@@ -1,0 +1,75 @@
+/*navbar background, brand/link text and color*/
+.navbar-default {
+  background-color: #222222;
+  border-color: #222222;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffcc00;
+}
+
+.container-fluid {
+  padding-left: 20px; /*default: 15px*/
+  padding-right: 20px; /*^same as above*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*vert-center publication pics in their box */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/*img swap on mouseover part */
+.hover-swap {
+  position: relative;
+  width: 75%;
+  border: 5px solid #ffffff;
+  margin: 0 auto;
+  display: block;
+}
+.hover-swap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hover-swap .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.hover-swap:hover .img-hover {
+  opacity: 1;
+}
+
+/*reduced gap between two side-by-side panels...
+might be defunct now i went with another solution*/
+.equal-panels > .col-sm-3,
+.equal-panels > .col-sm-9 {
+padding-left: 7px;
+padding-right: 7px;
+}
+/*normalized padding so top n bottom match*/
+.equal-panels .panel-body {
+padding-bottom: 10px;
+}
+/*this is the mini text style for next to the "Summary" collapsable parts on the research page*/      
+.summary-meta {
+font-size: 0.75em;
+color: #999;
+opacity: 0.9;
+}
+
+/*changed default from ~40px*/
+ul {
+  padding-left: 20px;
+  margin-left: 0;
+}
