@@ -1,589 +1,228 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
 
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+<title>index</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
 
-<title>Sin Prelic</title>
-
-<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-faa6a4e2aabe4245d88ebe29e1d6b5f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <link rel="icon" type="image/png" href="images/favicon.png">
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-
-
-
-
-
-<link rel="stylesheet" href="styles.css" type="text/css" />
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed fullcontent quarto-light">
 
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><i class='fa-solid fa-s'></i> <i class='fa-solid fa-ellipsis-vertical'></i> <i class='fa-solid fa-n'></i></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">About Sin</a>
-</li>
-<li>
-  <a href="full-cv.html">CV</a>
-</li>
-<li>
-  <a href="research.html">Research</a>
-</li>
-<li>
-  <a href="gallery.html">Gallery</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="mailto:sinprelic@protonmail.com">
-    <span class="fa fa-envelope"></span>
-     
-    email
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title"><i class="fa-solid fa-s"></i> <i class="fa-solid fa-ellipsis-vertical"></i> <i class="fa-solid fa-n"></i></span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">About Sin</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./full-cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./gallery.html"> 
+<span class="menu-text">Gallery</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:sinprelic@protonmail.com"> 
+<span class="menu-text"><i class="fa-solid fa-envelope"></i> (email me)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tldr.html"> 
+<span class="menu-text"><i class="fa-solid fa-stopwatch"></i> (tldr)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<div id="sin-prelic-phd" class="section level1">
-<h1>Sin <strong>Prelic</strong>, PhD</h1>
-<hr />
-<div style="text-align: center; margin: 0 auto;">
+
+
+<section id="sin-prelic-phd" class="level2">
+<h2 data-anchor-id="sin-prelic-phd">Sin <strong>Prelic</strong>, PhD</h2>
+<div class="text-center">
 <p>Hi! My name is <strong>Sin</strong>.</p>
-<p>I’m a versatile, multidisciplinary <strong>biologist</strong>.</p>
+<p>I’m a multidisciplinary <strong>biologist</strong>.</p>
 <div class="hover-swap">
-<p><img src="images/profile.jpg" class="img-normal">
-<img src="images/profileH.jpg" class="img-hover"></p>
+<p><img src="images/profile.jpg" class="img-normal"> <img src="images/profileH.jpg" class="img-hover"></p>
 </div>
-<p>I offer several flavors of <strong>personal introduction</strong>.
-The choice is yours!</p>
+<section id="email-socials" class="level6">
+<h6 data-anchor-id="email-socials"><span class="text-primary">email</span> / <span class="text-dark">socials</span></h6>
+<p><span style="font-size: 2rem;"> <a href="mailto:sinprelic@protonmail.com" style="font-size: 2rem;"><i class="fa-solid fa-envelope"></i></a> &nbsp;<a href="https://www.linkedin.com/in/sinprelic/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin text-dark"></i></a> <a href="https://orcid.org/0000-0002-6494-7389" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid text-dark"></i></a> <a href="https://www.researchgate.net/profile/Sinisa-Prelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-researchgate text-dark"></i></a> <a href="https://scholar.google.com/citations?user=8UJ2xZQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar text-dark"></i></a> <a href="https://loop.frontiersin.org/people/1360472/overview" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microscope text-dark"></i></a> <a href="https://github.com/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github text-dark"></i></a> <a href="https://linktr.ee/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linktree text-dark"></i></a> </span></p>
+<p>I offer several flavors of <strong>personal introduction</strong>. The choice is yours!</p>
+</section>
 </div>
-<p><br></p>
-<div id="pick-your-intro" class="section level4">
-<h4>Pick your intro:</h4>
-<ul class="nav nav-tabs">
-<li class="active">
-<a href="#tab1" data-toggle="tab" aria-expanded="true"> Short intro </a>
-</li>
-<li class>
-<a href="#tab2" data-toggle="tab" aria-expanded="false"> Long intro </a>
-</li>
-<li class>
-<a href="#tab3" data-toggle="tab" aria-expanded="false"> Academic </a>
-</li>
-<li class>
-<a href="#tab4" data-toggle="tab" aria-expanded="false"> Industry </a>
-</li>
-<li class="disabled">
-<a> Introspective intro </a>
-</li>
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-Other <span class="caret"></span> </a>
-<ul class="dropdown-menu">
-<li>
-<a href="#dropdown1" data-toggle="tab"> Personable intro </a>
-</li>
-<li>
-<a href="#dropdown2" data-toggle="tab"> Pictographic intro </a>
-</li>
-<li>
-<a href="#dropdown3" data-toggle="tab"> Ultrashort intro </a>
-</li>
-<li class="divider">
-</li>
-<li>
-<a href="#dropdown4" data-toggle="tab"> Site deets </a>
-</li>
-</ul>
-</li>
-</ul>
-<div id="myTabContent" class="tab-content">
-<div id="tab1" class="tab-pane fade active in">
-<p><br> Hello there! I’m a biologist with <strong>diverse, international
-research lab experiences</strong> and <strong>broad technical
-training</strong>. I thrive on multidisciplinary projects and enjoy
-tackling complex questions through combined experimental-computational
-approaches. My past research interests span molecular biology,
-neuroscience, chemical ecology, animal behavior, genome biology,
-cytology, microbe physiology and data science. I’m comfortable
-navigating between biological disciplines, bring new perspective and
-rigor, and strive for inventive, original output.</p>
-<p><strong>Professionally,</strong> I’ve worked most recently on the
-molecular cell biology &amp; neuroscience of olfaction at the Max Planck
-Institute for Chemical Ecology (dept. Evolutionary Neuroethology). I’ve
-worked in university, institute and hospital environments, and involve
-myself actively in various projects, often involving science
-communication, teaching, community organization and media production.
-For a little overview, see my <a href="full-cv.html">complete
-CV</a>.</p>
-<p>My research portfolio consists of <strong>scientific
-publications</strong> in expert journals and a variety of
-<strong>presentations</strong> given at specialist conferences across
-the world. I keep a complete list of exemplary
-<strong>articles</strong>, <strong>preprints</strong>,
-<strong>posters</strong> &amp; <strong>talks</strong> I’ve delivered on
-the <a href="research.html">research output</a> page.</p>
-<p>I learn quickly and like many things. Check some out on my random
-little tidbit <a href="gallery.html">gallery</a>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="false" href="">Brief</a></li><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="true" href="">Elevator pitch</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Deeper dive</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Academia</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Industry-speak</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">GeoTrail</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">Pictographic</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Former scientist, doctoral researcher and graduate at MPICE, IMPRS and Friedrich Schiller University with five published articles on molecular profiling, cell biology and neuroscience of <em>Drosophila</em> sensory systems.</p>
+<p>Educated and trained prior at Utrecht University across a broad range of life-science projects involving fungi, (epi)genomics, molecular chaperones, microtubule dynamics, nanobodies, biomolecular docking and biotech applications.</p>
+<p>Check out my <a href="./research.html">research output</a> and <a href="./full-cv.html">CV</a>! If you enjoy <code>tl;dr</code> and <code>BLUF</code> practices, see my <a href="./tldr.html">tl;dr page</a>.</p>
 </div>
-<div id="tab2" class="tab-pane fade">
-<p><br> I’m a versatile PhD-graduate biologist with extensive
-international lab experience, cross-disciplinary expertise and a
-portfolio of publications in scientific journals and talks at
-international specialist conferences. My career has unfolded many
-disciplines, organisms, and research cultures. My scientific path has
-taken me through molecular cell biology, sensory neuroscience, ecology,
-genome biology, and computational analysis — often weaving these threads
-together in multidisciplinary projects. I enjoy moving between fields,
-learning new techniques quickly, and building bridges between
-experimental and analytical perspectives. This breadth has given me a
-strong foundation in both wet‑lab experimentation and data‑driven
-inquiry, as well as an appreciation for how different scientific
-traditions approach the same biological questions. I feel like I have a
-lot to offer.</p>
-<p>Trained chiefly in molecular cell biology and neuroscience, I now
-have over a decade of experience in various life science research labs,
-including university, institute and hospital environments. I’m
-comfortable navigating between biological disciplines, and personally
-strive for inventive and original output. My work always reflects this
-ethic and cross-disciplinarity. So far, it has spanned areas like
-molecular biology and bioinformatics, cytology, ecology, sensory
-neuroscience, genome biology, epigenetics, molecular technique
-development, animal behavior, microbe physiology and evolution.</p>
-<p>In addition to having spent many years planning and running
-experiments in labs, I’ve led and managed research projects
-(independently and collaboratively), frequently worked with large -omics
-and multidimensional datasets, involved myself in conference
-organization, colleague representation, university course teaching and
-student supervision, designed and tested novel biological probes,
-written many scripts for data analysis, all the while writing and
-illustrating and enjoying getting technical ideas across with clarity
-and elegance.</p>
-<p>In short, I enjoy contributing to environments where
-interdisciplinary thinking is valued — and where learning never really
-stops. I relish in learning, trying things for their own sake, and
-applying my breadth of experience in new contexts.</p>
+<div id="tabset-1-2" class="active tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Hello there! I’m a biologist with <strong>diverse, international research lab experiences</strong> and <strong>broad technical training</strong>. I thrive on multidisciplinary projects and enjoy tackling complex questions through combined experimental-computational approaches. My past research interests span molecular biology, neuroscience, chemical ecology, animal behavior, genome biology, cytology, microbe physiology and data science. I’m comfortable navigating between biological disciplines, bring new perspective and rigor, and strive for inventive, original output.</p>
+<p><strong>Professionally,</strong> I’ve worked most recently on the molecular cell biology &amp; neuroscience of olfaction at the Max Planck Institute for Chemical Ecology (dept. <em>Evolutionary Neuroethology</em>). I’ve worked in university, institute and hospital environments, and involve myself actively in various projects, often involving science communication, teaching, community organization and media production. For a little overview, see my <a href="./full-cv.html">complete CV</a>.</p>
+<p>My research portfolio consists of <strong>scientific publications</strong> in expert journals and a variety of <strong>presentations</strong> given at specialist conferences across the world. I keep a complete list of exemplary <strong>articles</strong>, <strong>preprints</strong>, <strong>posters</strong> and <strong>talks</strong> I’ve delivered on the <a href="./research.html">research output</a> page.</p>
+<p>I’m versatile and like many things. Check some out on my random little tidbit <a href="./gallery.html">gallery</a>.</p>
 </div>
-<div id="tab3" class="tab-pane fade">
-<br>
-<p>
-I am a published multidisciplinary biologist with over a decade of
-academic research experience spanning molecular cell biology, sensory
-neuroscience, ecology, genome biology, cytology, epigenetics,
-bioinformatics, microbe physiology, evolution and animal behavior. My
-work integrates experimental and computational approaches. I have
-trained in multiple international laboratories, gaining broad
-methodological expertise and a strong foundation in both
-hypothesis‑driven experimentation, quantitative analysis, and of course
-in scientific writing and the presentation of results to expert peers.
-</p>
-<p>
-Much of my formal <a href="research.html">research output</a> is focused
-on the sensory biology and chemical ecology of insects. Chiefly, I’ve
-worked in olfactory neuroscience using the <i>Drosophila</i> vinegar fly
-as a tractable model system. I’ve investigated and demonstrated the
-involvement of V-ATPase proton pumps, innexin gap
-junctions/hemichannels, nitric oxide and cGMP signaling, and
-non-neuronal ‘support’ cell activity within the <i>Drosophila</i>
-antenna, the chief organ responsible for chemical detection of odors. My
-doctoral dissertation unifies much of my work at the Max Planck Insitute
-for Chemical Ecology, and serves as an extensive treatise on the subject
-of insect olfaction, and where I suggest future directions for research
-in nascent fields focusing on non-neuronal cell functions in
-compartmentalized systems. The authoring of a review of the contribution
-of non-neuronal cells in sensory systems is currently in progress!
-</p>
-<p>
-Aside from this, I’ve also gathered experiences from major
-<strong>research projects:</strong>
-</p>
-<p>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>I’m a versatile PhD-graduate biologist with extensive international lab and life experience, cross-disciplinary expertise and a portfolio of publications in scientific journals and talks at international specialist conferences. My career has unfolded many disciplines, organisms, and research cultures. My scientific path has taken me through molecular cell biology, sensory neuroscience, ecology, genome biology, and computational analysis, often weaving these threads together in multidisciplinary projects.</p>
+<p>I enjoy moving between fields, learning new techniques quickly, and building bridges between experimental and analytical perspectives. This breadth has given me a strong foundation in both wet-lab experimentation and data-driven inquiry, as well as an appreciation for how different scientific traditions approach the same biological questions. I feel like I have a lot to offer.</p>
+<p>Trained chiefly in molecular cell biology and neuroscience, I now have over a decade of experience in various life science research labs, including university, institute and hospital environments. I’m comfortable navigating between biological disciplines, and personally strive for inventive and original output. My work always reflects this ethic and cross-disciplinarity.</p>
+<p>So far, it has spanned areas like molecular biology and bioinformatics, cytology, ecology, sensory neuroscience, genome biology, epigenetics, molecular technique development, animal behavior, microbe physiology and evolution.</p>
+<p>In addition to having spent many years planning and running experiments in labs, I’ve led and managed research projects (independently and collaboratively), frequently worked with large -omics and multidimensional datasets, involved myself in conference organization, colleague representation, university course teaching and student supervision, designed and tested novel biological probes, written many scripts for data analysis, all the while writing and illustrating and enjoying getting technical ideas across with clarity and elegance.</p>
+<p>In short, I enjoy contributing to environments where interdisciplinary thinking and approach are valued and increasingly necessary. I relish in learning, trying things for their own sake, and applying my breadth of experience to find progress in new contexts.</p>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>I am a published multidisciplinary biologist with over a decade of academic research experience spanning molecular cell biology, sensory neuroscience, ecology, genome biology, cytology, epigenetics, bioinformatics, microbe physiology, evolution and animal behavior. My work integrates experimental and computational approaches. I have trained in multiple international laboratories, gaining broad methodological expertise and a strong foundation in both hypothesis-driven experimentation and quantitative analysis, as well as scientific writing and presentation.</p>
+<p>Much of my formal <a href="./research.html">research output</a> is focused on the sensory biology and chemical ecology of insects. Chiefly, I’ve worked in olfactory neuroscience using <em>Drosophila</em> vinegar flies as a tractable model system. I’ve investigated and demonstrated the involvement of V-ATPase proton pumps, innexin gap junctions and hemichannels, nitric oxide and cGMP signaling, and non-neuronal support cell activity within the <em>Drosophila</em> antenna.</p>
+<p>My doctoral dissertation unifies much of my work at the Max Planck Institute for Chemical Ecology and serves as an extensive treatise on insect olfaction. It also suggests future directions for research in emerging fields focusing on non-neuronal cell functions in compartmentalized systems. The authoring of a review concerning non-neuronal contributions to sensory systems is currently in progress.</p>
+<p>Aside from this, I’ve also gathered experiences from major research projects:</p>
 <ul>
-<li>
-In a cellular dynamics lab, I studied angiogenesis using human
-endothelial spheroid/organoid models, where I induced/disrupted
-angiogenesis in various ways. I employed genetic manipulation and
-pharmacological perturbation of microtubule-organizing genes/organelles
-(e.g. Golgi apparatus, centrosome and microtubule stabilizing and
-end-binding proteins), determining their involvement in blood vessel
-outgrowth.
-</li>
-<li>
-In a translational immunology lab, I adapted novel molecular techniques
-to allow for massively parallel identification/quantification of DNA
-regulatory element activity across the entire human genome. This
-required developing broad know-how of biochemical and genomics
-applications, and familiarity with validating new protocols against
-prior ‘golden’ standards. I quantified transcriptional activity with
-bioluminescent techniques (e.g. luciferase assays) and prepared various
-samples for sequencing and analysis. Experiences include chromatin
-immunoprecipitation (ChIP-seq), enzymatic treatments (DNase-seq) and
-self-transcription assays (STARR-seq).
-</li>
-<li>
-In a fungal physiology lab, I profiled growth/saccharification
-capacities of thermophilic fungi. I cultured industrially relevant
-thermophiles (and artificially selected progeny) in solid/liquid phases,
-comparing their ability to degrade wide ranges of complex plant
-biomasses (sources of second-generation/advanced biofuels) efficiently
-at higher temperatures. I performed silver staining and various
-photometric assays determining catabolic activity of fungal secretions.
-</li>
+<li>In a cellular dynamics lab, I studied angiogenesis using human endothelial spheroid and organoid models and determined roles of microtubule-organizing genes and organelles in blood vessel outgrowth.</li>
+<li>In a translational immunology lab, I adapted novel molecular techniques for massively parallel identification and quantification of DNA regulatory element activity across the human genome. Experiences included ChIP-seq, DNase-seq, STARR-seq and luciferase assays.</li>
+<li>In a fungal physiology lab, I profiled growth and saccharification capacities of thermophilic fungi, comparing their ability to degrade plant biomass relevant to advanced biofuel production.</li>
 </ul>
-</p>
-<p>
-I also have several <strong>laboratory rotation</strong> experiences.
-These include being tasked with reviewing disparate research on the
-poorly understood set of extracellular chaperones (small proteostatic
-proteins), being introduced to nanobody applications in biomedical
-research (small single-domain antibodies with abilities to be combined
-with moieties for tagging or delivery of bioactive compounds), and
-gaining first-hand experience with biomolecular docking, or
-computational simulations of molecular interactions, which are used for
-various ends by structural biologists and in drug design.
-</p>
-</p>
-Going forward: I am particularly interested in complex biological
-systems, cross‑disciplinary research, and the interface between
-molecular mechanisms, organismal function and applying combinations of
-classic and novel methods to produce rigorous scientific output.
-</p>
+<p>I also completed several laboratory rotations involving extracellular chaperones, nanobody technologies and biomolecular docking simulations.</p>
+<p>Going forward, I am particularly interested in complex biological systems and questions, cross-disciplinary research, combinations of computational and experimental biology, and unearthing molecular mechanisms with native organismal functions and behaviors.</p>
 </div>
-<div id="tab4" class="tab-pane fade">
-<br>
-<p>
-I’m a versatile biologist with hands‑on experience in molecular and
-cellular biology, neuroscience, and data-driven hypothesis testing and
-computational analysis. I’ve worked in fast‑paced international research
-environments where adaptability, technical breadth, and cross‑functional
-collaboration were essential.
-</p>
-<p>
-My background includes bioinformatics, assay development, familiarity
-with a wide range of light microscopic techniques, genome‑scale analysis
-and physiology.
-</p>
-<p>
-I’m comfortable writing technically, navigating complex datasets,
-troubleshooting experimental workflows, and contributing to
-multidisciplinary teams, systems and projects with fine-grained
-attentiveness to detail and specific demand. Evident from my background,
-I learn anything and everything to assure quality output and
-interaction.
-</p>
-<p>
-I bring a strong foundation in hypothesis‑driven experimentation,
-quantitative analysis, methodological expertise and a practical,
-solution‑oriented mindset. I love working in dynamic teams, and
-communicate elegantly with colleagues, audiences and clients in tailored
-manners.
-</p>
-<p>
-In the world of life science and biotech problems, let’s do it right!
-</p>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<p>I’m a versatile biologist with hands-on experience in molecular and cellular biology, neuroscience, and data-driven hypothesis testing and computational analysis. I’ve worked in fast-paced international research environments where adaptability, technical breadth, and cross-functional collaboration were essential.</p>
+<p>My background includes bioinformatics, assay development, familiarity with a wide range of light microscopic techniques, genome-scale analysis and (electro)physiology.</p>
+<p>I’m comfortable writing technically, navigating complex datasets, troubleshooting experimental workflows, and contributing to multidisciplinary teams, systems and projects with fine-grained attentiveness to detail and specific demand.</p>
+<p>I bring a strong foundation in hypothesis-driven experimentation, quantitative analysis, methodological expertise and a practical, solution-oriented mindset. I love working in dynamic teams, and communicating insights with expert and non-expert colleagues, audiences and clients in tailored manners.</p>
 </div>
-<div id="dropdown1" class="tab-pane fade">
-<p><br> My pleasure to oblige :)</p>
-<p>Here’s a little Reader’s Digest about my personal life, so far:</p>
-<p>I was born in Yugoslavia, and raised young in Serbia and later
-Poland. In time for primary school, my family moved to Prague, Czech
-Republic, where the entirety of my primary schooling was at a British
-international school. It was during these formative years I played too
-many sports and wrote poems profusely.</p>
-<p>As a young adult I moved to the Netherlands, where I obtained
-Bachelor and Master degrees in the city of Utrecht, discovering my
-unwavering interest in biology (or rather, the <em>life sciences</em>,
-named due to the intersection of traditional biology with the branches
-of physical sciences such as chemistry and physics), a field underpinned
-and peppered with complexity and layers of emergence. It was in Utrecht
-I think I began to refer to my interests as broad and multidisciplinary.
-As I discovered my aptitude within the life sciences, I found this area
-to be particularly rich in cross-disciplinary pollination. For me, the
-exploration of how living systems work - from molecules all the way
-across systems and organizations to fully-fledged individual organisms,
-participating in ecospheres and communities, with behaviors and
-lifestyles to boot - is simply unmatched in fulfillment. My endeavors in
-the life sciences have allowed me to learn so many investigative and
-exploratory techniques, about unlikely interconnections across disparate
-topics, about how problems are solved, how questions are answered, and
-granted opportunities to work with people from different scientific
-backgrounds, defined by unique strengths, employing different tools,
-within diverse research cultures. I’ve found no two biologists truly
-alike. It simply allows for professional work where resourcefulness,
-insightfulness and endless joys of learning to mix and co-exist.</p>
-<p>After a subsequent homecoming, soul-searching and stint in Prague’s
-weird and vibrant art community for a year, I decided to pursue a PhD in
-molecular biology and neuroscience in Jena, Germany, working
-simultaneously on many projects involving fruit flies, neurogenetics and
-olfactory biology at the Max Planck Institute for Chemical Ecology.</p>
-<p>I worked many years on studying the sense of smell, and carving out
-my own niche of understanding what role the poorly-understood
-<strong>non-</strong>neuronal cells might play in the sensory process. I
-became familiar with different sensory systems across the animal
-kingdom. During these research years, an incidental pandemic swept the
-globe. Upon infection, most of us were familiarized with its signature
-symptom: a sudden loss of smell, or <em>anosmia</em>, later confirmed to
-arise from viral entry into non-neuronal cells in our noses, disrupting
-our sensory ability to perceive airborne chemicals. I was able to shed
-some insights and publish a few works describing how non-neuronal cells
-function and co-operate with neurons, ultimately allowing creatures to
-smell the world. Research science in this field is a wild ride. I
-completed my doctorate with flying colors and now pose myself for
-another wild turn of chance and irony, as I look for the next challenge
-and playground.</p>
-<p>Aside from career, I take on hobbies plentifully. I self-describe as
-a musician. I play the bass, play in bands and listen to music
-voraciously. I also enjoy sports and games; I grew up playing football
-competitively, developed into a chess player, and try to keep up with
-the kaleidoscope of play and games out there. I love producing film and
-videos, organizing barbecue parties and relaxing in nature.</p>
-<p>Let’s see where career and life take me! As ever, I remain open to
-opportunities, job offers and a <a
-href="mailto:sinprelic@protonmail.com">chat</a>.</p>
-<p>Thanks for reading!</p>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<p>Born in <strong>Yugoslavia</strong>.</p>
+<p>Raised young in <strong>Serbia</strong> and then <strong>Poland</strong>.</p>
+<p>Moved to <strong>Prague, Czech Republic</strong> as a child, attending a British international school.</p>
+<p>As an adolescent I’ve been lucky to travel to <strong>Denmark</strong>, <strong>Slovenia</strong>, <strong>Croatia</strong>, <strong>Hungary</strong>, <strong>Slovakia</strong> and <strong>Austria</strong>.</p>
+<p>Moved to <strong>the Netherlands</strong> as young adult. There I obtained BSc and MSc degrees at Utrecht University.</p>
+<p>Moved back to <strong>Prague</strong> for a few years, involving myself in local art communities and working on many creative projects and side gigs.</p>
+<p>Then moved to <strong>Jena, Germany</strong> to pursue doctoral research in molecular biology/neuroscience at the Max Planck Institute for Chemical Ecology.</p>
+<p>The stint involved many international conference travels and research visits, including <strong>Kenya</strong>, <strong>Tanzania</strong>, <strong>Portugal</strong>, <strong>France</strong> and various campuses/cities around <strong>Germany</strong>.</p>
+<p>Currently traveling between cities and countrysides all over Europe. Recent trips include <strong>the UK</strong>, <strong>Belgium</strong>, <strong>Netherlands</strong>, <strong>Poland</strong>, <strong>Czech Republic</strong> and <strong>Germany</strong>.</p>
+<p>Where to next? Who can tell…</p>
+<!-- I spent many years studying the sense of smell and exploring what role poorly-understood **non-neuronal** cells might play in sensory biology. During the COVID-19 pandemic, anosmia suddenly became a globally familiar concept, and my research area unexpectedly gained broader relevance. I was fortunate to contribute several publications exploring how non-neuronal cells cooperate with neurons to enable olfactory perception.
+
+I completed my doctorate with flying colors and now look forward to whatever challenge comes next.
+
+Aside from career, I take on hobbies plentifully. I self-describe as a musician. I play bass, perform in bands and listen to music voraciously. I enjoy sports, games, filmmaking, barbecues and spending time outdoors.
+
+Let's see where career and life take me.
+
+As ever, I remain open to opportunities, job offers and a [chat](mailto:sinprelic@protonmail.com).
+
+Thanks for reading! -->
 </div>
-<div id="dropdown2" class="tab-pane fade">
-<p><br> 😴 → ☕ → ✨ → 🔬 → 🧬🎵 → 📚 → 🧠 → 🤷 → ✨ → 🧪 → 🤷 → 🎨🎵 →
-🧩 → 😴</p>
-<p>or how about</p>
-<pre class="text"><code>        sssssssssssss
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<p>😴 → ☕ → ✨ → 🔬 → 🧬🎵 → 📚 → 🧠 → 🤷 → ✨ → 🧪 → 🤷 → 🎨🎵 → 🧩 → 😴</p>
+or how about
+<pre>        sssssssssssss
      sss             sss
    ss   sin       sin   ss
   ss       sin   sin      ss
@@ -591,14 +230,14 @@ href="mailto:sinprelic@protonmail.com">chat</a>.</p>
   ss   sssssssssssssss    ss
    ss  s   sin sin   s   ss
      sss             sss
-        sssssssssssss</code></pre>
-<p>or worse yet…</p>
-<pre style="font-size: 0.75rem;">
-                                                              ░                    ░ ░░░░░  ░   ▒▓▒▓
+        sssssssssssss
+</pre>
+or worse yet
+<pre style="font-size: 0.5rem;">                                                              ░                    ░ ░░░░░  ░   ▒▓▒▓
                                                     ░░              ▒░░▒▓▒▓██░░      ░▒░▓▒█░ ▒▒ ░▒░ 
   ░▒▒                       ░               ░                       ▒▓▒█░░ ▒░▓░   ░█▓▒█▒░█▒  ░██▒░  
- █  ░▒░                       ░░░        ░▒▒▓▓░░░░      ░░░░░▓▒▒████░  ░      ██░░░░  ░ ░█░ ▒▒░ ▓▓░░
-                             ░         ░         ░▓▒▒▒░░░▓▒░░░▒▒▒░░ ░░▓░       ░░░░▓░       ░█▒░░▒▓ 
+ █  ░▒░     the               ░░░        ░▒▒▓▓░░░░      ░░░░░▓▒▒████░  ░      ██░░░░  ░ ░█░ ▒▒░ ▓▓░░
+            sky              ░         ░         ░▓▒▒▒░░░▓▒░░░▒▒▒░░ ░░▓░       ░░░░▓░       ░█▒░░▒▓ 
  ▒░▒                       ░░   ░░░  ░     ░████  ░░░░ ░  ░░░░ ░░░  ░░▓██▓▓░░  ▒░ ▒███   ░█     ░▒█ 
  ░░░                      ░░      ░░░   ░       ░░     ███▒▒▓▓▒▓▓██▓▓▓▒▒░░▒██░    ░▒▒ ░▒▒██  ░      
        ▓                 ▒░░░░░░ ░▒▒░  ░▓▓████▓▒  ▒▓▒ ▒   █▒█▓▓▓▓█▓░░░▒░░░▒▓▒░░  ░░     ░  ░█       
@@ -631,244 +270,417 @@ href="mailto:sinprelic@protonmail.com">chat</a>.</p>
  ███▒█▒░░░░░▒▓▒░▒█▒          ░░                                                  ░     ██░░▒▓▒░░  ▓▒
  ░▓░░░░░        ░                                                                           ░▒▓▓    
 </pre>
-<p>or rather unforgivably, an explanation of logo and favicon
-choice:</p>
-<pre>
-<img src="images/favico-expl.png" style="width:400px;">
-</pre>
+<p>or rather unforgivably, an explanation of logo and favicon choice: <img src="images/favico-expl.png" class="img-fluid" width="400"></p>
 <p>best to stop while ahead.</p>
 </div>
-<div id="dropdown3" class="tab-pane fade">
-<p><br> Former
-<abbr title="Doctoral researcher/scientist at Max Planck Institute for Chemical Ecology">MPICE
-DR</abbr>,
-<abbr title="International Max Planck Research School & Friedrich Schiller University Jena">IMPRS
-&amp; FSU</abbr> grad with 5 published articles on
-<abbr title="Molecular, cellular biology and neuroscience">molcellneurobio</abbr>
-of <i>Drosophila</i> sensory system.</p>
-<p>Prior educated/trained @ <abbr title="Utrecht University">UU</abbr>
-in life science research on various
-<abbr title="(involving fungi, STARR-seq development, microtubule dynamics, nanobodies, biomolecular docking sims, biotech concepts, etc.)">projects</abbr>
-at uni, hospital, institute depts.</p>
-<p>Rich <a href="research.html">research history</a>, does <a
-href="full-cv.html">many things</a>. Enjoys <code>tl;dr</code> and
-<code>BLUF</code> practices.</p>
-</div>
-<div id="dropdown4" class="tab-pane fade">
-<p><br> My v2.0 website was hand-written in 2026 using RStudio/vscodium
-in <code>R</code>, <code>Rmd</code>, vanilla <code>html</code>,
-<code>css</code> and <code>js</code> with Bootstrap v3.3.5. Based on a
-customization of the bootswatch theme <i>united</i>. To replicate, I
-recommend putting <code>rmarkdown::render_site()</code> in your search
-engine of choice! Hosted on Github Pages.</p>
 </div>
 </div>
-<hr />
-</div>
-<div id="contact-me" class="section level4">
-<h4>Contact me:</h4>
-<p><span style="font-size: 2rem;">
-<a href="mailto:sinprelic@protonmail.com" style="font-size: 2rem;">
-<i class="fa-solid fa-envelope"></i></a></span>
-<a href="mailto:sinprelic@protonmail.com" style="position: relative; top: -3px;">sinprelic@protonmail.com</a></p>
-</div>
-<div id="socials" class="section level4">
-<h4>Socials:</h4>
-<div style="font-size: 2.5rem;">
-<p><a href="https://www.linkedin.com/in/sinprelic/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-<a href="https://orcid.org/0000-0002-6494-7389" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
-<a href="https://www.researchgate.net/profile/Sinisa-Prelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-researchgate"></i></a>
-<a href="https://scholar.google.com/citations?user=8UJ2xZQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>
-<a href="https://loop.frontiersin.org/people/1360472/overview" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microscope"></i></a>
-<a href="https://github.com/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-<a href="https://linktr.ee/sinprelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linktree"></i></a></p>
-</div>
-<hr />
+<hr>
 <div style="text-align: right;">
 <a href="#top" class="btn btn-link">back to top</a>
 </div>
-</div>
-</div>
 
-<script async src="https://integration-badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
-<script>
-$(function () {
-  var $target = $('#details1');
-  var $btn = $('[data-target="#details1"]');
 
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
+</section>
+
+</main> <!-- /main -->
+<script async="" src="https://integration-badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
   });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details2');
-  var $btn = $('[data-target="#details2"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details3');
-  var $btn = $('[data-target="#details3"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details4');
-  var $btn = $('[data-target="#details4"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details5');
-  var $btn = $('[data-target="#details5"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details6');
-  var $btn = $('[data-target="#details6"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details7');
-  var $btn = $('[data-target="#details7"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details8');
-  var $btn = $('[data-target="#details8"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details9');
-  var $btn = $('[data-target="#details9"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
+  </script>
+</div> <!-- /content -->
 
 
 
-</div>
 
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
+</body></html>

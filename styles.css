@@ -1,16 +1,43 @@
+/* i scaled everything down because quarto is huge compared to Rmd (previous site version) */
+body {
+  font-size: 0.85rem;
+}
+
+/* for the tags on the cv page */
+.my-half-rem {
+  font-size: 0.5rem;
+}
+
+/* this is for the collapsible section coloring */
+.my-bg-collapser .callout-header {
+    background-color: #0000000f !important;
+}
+
+.dropdown-menu {
+    font-size: 0.85rem;
+}
+
+.dropdown-item {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
 /*navbar background, brand/link text and color*/
-.navbar-default {
+.navbar {
   background-color: #222222;
   border-color: #222222;
 }
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover {
+.navbar .navbar-brand {
+  /* color: #E95420; */
   color: #ffcc00;
+}
+.navbar .navbar-nav > li > a {
+  color: #ffffff;
+  font-family: monospace;
+}
+.navbar .navbar-nav > li > a:hover {
+  /* color: #ffcc00; */
+  color: #E95420;
 }
 
 .container-fluid {
@@ -50,17 +77,6 @@
   opacity: 1;
 }
 
-/*reduced gap between two side-by-side panels...
-might be defunct now i went with another solution*/
-.equal-panels > .col-sm-3,
-.equal-panels > .col-sm-9 {
-padding-left: 7px;
-padding-right: 7px;
-}
-/*normalized padding so top n bottom match*/
-.equal-panels .panel-body {
-padding-bottom: 10px;
-}
 /*this is the mini text style for next to the "Summary" collapsable parts on the research page*/      
 .summary-meta {
 font-size: 0.75em;

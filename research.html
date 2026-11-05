@@ -1,1106 +1,1034 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
 
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+<title>research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
 
-<title>Sin Prelic - Research</title>
-
-<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-faa6a4e2aabe4245d88ebe29e1d6b5f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <link rel="icon" type="image/png" href="images/favicon.png">
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-
-
-
-
-
-<link rel="stylesheet" href="styles.css" type="text/css" />
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed fullcontent quarto-light">
 
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><i class='fa-solid fa-s'></i> <i class='fa-solid fa-ellipsis-vertical'></i> <i class='fa-solid fa-n'></i></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">About Sin</a>
-</li>
-<li>
-  <a href="full-cv.html">CV</a>
-</li>
-<li>
-  <a href="research.html">Research</a>
-</li>
-<li>
-  <a href="gallery.html">Gallery</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="mailto:sinprelic@protonmail.com">
-    <span class="fa fa-envelope"></span>
-     
-    email
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title"><i class="fa-solid fa-s"></i> <i class="fa-solid fa-ellipsis-vertical"></i> <i class="fa-solid fa-n"></i></span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About Sin</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./full-cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./gallery.html"> 
+<span class="menu-text">Gallery</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:sinprelic@protonmail.com"> 
+<span class="menu-text"><i class="fa-solid fa-envelope"></i> (email me)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tldr.html"> 
+<span class="menu-text"><i class="fa-solid fa-stopwatch"></i> (tldr)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<div id="research" class="section level1">
+
+
+<section id="research" class="level1">
 <h1><strong>Research</strong></h1>
-Summary of my scientific output, by type:
-<div class="btn-group" style="position: relative; top: -2px;">
-<a href="#" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown" aria-expanded="false">
-Quick find <span class="caret"></span> </a>
+<div class="d-flex align-items-center gap-2">
+<span>Summary of my scientific output, by type:</span>
+<div class="dropdown">
+<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+Quick find
+</button>
 <ul class="dropdown-menu">
 <li>
-<a href="#publications">Publications</a>
+<a class="dropdown-item" href="#publications">Publications</a>
 </li>
 <li>
-<a href="#select-conference-talks">Presentations</a>
+<a class="dropdown-item" href="#select-conference-talks">Presentations</a>
 </li>
 <li>
-<a href="#poster-example">Posters</a>
+<a class="dropdown-item" href="#poster-example">Posters</a>
 </li>
 <li>
-<a href="#preprints">Preprints</a>
+<a class="dropdown-item" href="#preprints">Preprints</a>
 </li>
 <li>
-<a href="#manuscripts-in-preparation">Manuscripts (in preparation)</a>
+<a class="dropdown-item" href="#manuscripts-in-preparation">Manuscripts (in preparation)</a>
 </li>
 </ul>
 </div>
-<p>You can also find my work on the web: <span
-style="font-size: 1.6rem;">
-<a href="https://orcid.org/0000-0002-6494-7389" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
-<a href="https://www.researchgate.net/profile/Sinisa-Prelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-researchgate"></i></a>
-<a href="https://scholar.google.com/citations?user=8UJ2xZQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>
-<a href="https://loop.frontiersin.org/people/1360472/overview" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microscope"></i></a>
-</span></p>
-<hr />
-<div id="publications" class="section level3">
-<h3><strong>Publications</strong></h3>
-<div id="as-lead-author" class="section level5">
+</div>
+<p>My scientific works on the web: <span style="font-size: 1rem;"> <a href="https://orcid.org/0000-0002-6494-7389" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a> <a href="https://www.researchgate.net/profile/Sinisa-Prelic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-researchgate"></i></a> <a href="https://scholar.google.com/citations?user=8UJ2xZQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://loop.frontiersin.org/people/1360472/overview" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microscope"></i></a> </span></p>
+<hr>
+<section id="publications" class="level3">
+<h3 data-anchor-id="publications"><strong>Publications</strong></h3>
+<section id="as-lead-author" class="level5">
 <h5>As lead author:</h5>
-<div class="row equal-panels">
-<!-- unified panel bit -->
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-<!-- image left bit -->
-<div class="col-sm-3">
+<!-- v-atpase paper start -->
+<div class="card my-3">
+<div class="card-body">
+<div class="d-flex align-items-center gap-0">
+<!-- IMAGE COLUMN -->
+<div style="flex: 0 0 35%; max-width: 35%;">
 <div class="hover-swap">
-<p><img src="images/p4.png" class="img-responsive img-normal project-img">
-<img src="images/p4-1.png" class="img-responsive img-hover project-img"></p>
+<p><img src="images/p4.png" class="img-fluid img-normal project-img"> <img src="images/p4-1.png" class="img-fluid img-hover project-img"></p>
 </div>
 </div>
-<!-- text right bit -->
-<div class="col-sm-9">
-<p>
-Prelic, Jain <i>et al.</i><br> <b>Expression of <i>Drosophila
-melanogaster</i> V-ATPases in olfactory sensillum support cells.</b>
-</p>
-<p>
+<!-- CONTENT COLUMN -->
+<div style="flex: 1;">
+<h4 class="card-title" data-anchor-id="as-lead-author">
+Expression of <i>Drosophila melanogaster</i> V-ATPases in olfactory sensillum support cells.
+</h4>
+<h6 class="card-subtitle mb-2 text-muted">
+Prelic, Jain <i>et al.</i>
+</h6>
+<p class="card-text">
 Published in <i>Insects</i> journal in 2024.
 </p>
 <p>
-<a href="https://doi.org/10.3390/insects15121016" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-xs">Link</a>
-<a href="https://doi.org/10.6084/m9.figshare.27994004" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">Supplementary
-data (FigShare)</a>
+<a href="https://doi.org/10.3390/insects15121016" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">Link</a> <a href="https://doi.org/10.6084/m9.figshare.27994004" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Supplementary data (FigShare)</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.3390/insects15121016" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="true"></span>
+<p><span class="__dimensions_badge_embed__" data-doi="10.3390/insects15121016" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Research Article: 13 pages, 7 figures)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+We perform bioinformatic analyses and immunofluorescence microscopy to explore and then pinpoint the expression of proton pumps in the fruit fly olfactory system. We hypothesize such pumps are situated on non-neuronal cells, and are involved in the critical regulation of proton and K<sup>+</sup> concentrations necessary for correct sensory functioning.
 </p>
-<!-- collapse bit start -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-Summary <span class="summary-meta">(Research Article: 13 pages, 7
-figures)</span>
-<button class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-target="#details1">
-Show </button>
-</h3>
-</div>
-<div id="details1" class="collapse">
-<div class="panel-body" style="font-size: 1.2rem;">
-<p>We perform bioinformatic analyses and immunofluorescence microscopy
-to explore and then pinpoint the expression of proton pumps in the fruit
-fly olfactory system. We hypothesize such pumps are situated on
-non-neuronal cells, and are involved in the critical regulation of
-proton and K<sup>+</sup> concentrations necessary for correct sensory
-functioning.</p>
-<p>We discover abundant expression of many genes composing the proton
-pump family in <i>Drosophila</i> antennae, and further localize these to
-support cells of antennal sensilla by analysis of cell type classes in
-single-cell transcriptomes, as well as showing their localization via
-immunolabeling in antennal sections. We demonstrate and further discuss
-mechanisms by which extracellular ionic compositions are maintained, and
-how known proton/K<sup>+</sup> antiporters may then facilitate sensory
-function in animals.</p>
+<p style="font-size: small;">
+We discover abundant expression of many genes composing the proton pump family in <i>Drosophila</i> antennae, and further localize these to support cells of antennal sensilla by analysis of cell type classes in single-cell transcriptomes, as well as showing their localization via immunolabeling in antennal sections. We demonstrate and further discuss mechanisms by which extracellular ionic compositions are maintained, and how known proton/K<sup>+</sup> antiporters may then facilitate sensory function in animals.
+</p>
 </div>
 </div>
 </div>
 </div>
-<p><!-- end text right bit --></p>
-</div>
-<p><!-- end row --></p>
 </div>
 </div>
 </div>
-</div>
-<div class="row equal-panels">
-<!-- unified panel bit -->
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-<!-- image left bit -->
-<div class="col-sm-3">
+<!-- v-atpase paper end -->
+<!-- dissertation start -->
+<div class="card my-3">
+<div class="card-body">
+<div class="d-flex align-items-center gap-0">
+<!-- IMAGE COLUMN -->
+<div style="flex: 0 0 35%; max-width: 35%;">
 <div class="hover-swap">
-<p><img src="images/dissertation.png" class="img-responsive img-normal project-img">
-<img src="images/dissertation-1.png" class="img-responsive img-hover project-img"></p>
+<p><img src="images/dissertation.png" class="img-fluid img-normal project-img"> <img src="images/dissertation-1.png" class="img-fluid img-hover project-img"></p>
 </div>
 </div>
-<!-- text right bit -->
-<div class="col-sm-9">
-<p>
-Prelic, S.<br> <b>Non-canonical sensory biology of antennal cells in
-insect olfaction.</b>
+<!-- CONTENT COLUMN -->
+<div style="flex: 1;">
+<h4 class="card-title">
+Non-canonical sensory biology of antennal cells in insect olfaction.
+</h4>
+<h6 class="card-subtitle mb-2 text-muted">
+Prelic, S.
+</h6>
+<p class="card-text">
+Published in <i>Thuringian University &amp; State Library (ThULB)</i> in 2024.
 </p>
 <p>
-Published in <i>Thuringian University &amp; State Library (ThULB)</i> in
-2024.
+<a href="https://doi.org/10.22032/dbt.62655" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">Link</a>
 </p>
-<p>
-<a href="https://doi.org/10.22032/dbt.62655" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-xs">Link</a>
-</p>
-<p>
-<span class="__dimensions_badge_embed__" data-doi="10.22032/dbt.62655"
-data-legend="hover-right" data-style="small_rectangle"
-data-hide-zero-citations="true"></span>
-</p>
-<!-- collapse bit start -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-Summary <span class="summary-meta">(Dissertation: 261 pages, 13 figures,
-3 embedded manuscripts)</span>
-<button class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-target="#details2">
-Show </button>
-</h3>
+<p><span class="__dimensions_badge_embed__" data-doi="10.22032/dbt.62655" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div id="details2" class="collapse">
-<div class="panel-body" style="font-size: 1.2rem;">
-<p>I identify and review non-neuronal processes and constituents of
-olfactory organs as crucial (though under-explored) elements of insect
-olfactory systems. I then set out to investigate several ‘non-canonical’
-mechanisms in insect antennae, an area that remains entirely unexplored.
-I present original research articles on:</p>
-<ul>
-<li><b>intercellular interactions</b> between neuronal and non-neuronal
-cells. I demonstrate coupled activity between these cell types during
-sensory activity,<br></li>
-<li><b>paracrine signaling</b> (messenger-mediated cell-cell
-communication), exploring signaling pathways and their effects on
-potentiating sensory processes,<br></li>
-<li><b>juxtacrine signaling</b> (contact-dependent communication),
-showing the presence of gap junctions within insect olfactory
-organs.</li>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Dissertation: 261 pages, 13 figures, 3 embedded manuscripts)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+I identify and review non-neuronal processes and constituents of olfactory organs as crucial (though under-explored) elements of insect olfactory systems. I then set out to investigate several ‘non-canonical’ mechanisms in insect antennae, an area that remains entirely unexplored. I present original research articles on:
+</p>
+<p style="font-size: small;">
+</p><ul style="font-size: small;">
+<li>
+<b>intercellular interactions</b> between neuronal and non-neuronal cells. I demonstrate coupled activity between these cell types during sensory activity,
+</li>
+<li>
+<b>paracrine signaling</b> (messenger-mediated cell-cell communication), exploring signaling pathways and their effects on potentiating sensory processes,
+</li>
+<li>
+<b>juxtacrine signaling</b> (contact-dependent communication), showing the presence of gap junctions within insect olfactory organs.
+</li>
 </ul>
-<p>Given this budding subject and field of research, I also propose a
-wide range of novel considerations, hypotheses and practical research
-directions for future exploration of animal sensory systems, especially
-given notable (though unreported) parallels among various sensory
-systems</p>
-</div>
-</div>
-</div>
-</div>
-<p><!-- end text right bit --></p>
-</div>
-<p><!-- end row --></p>
-</div>
-</div>
-</div>
-</div>
-<div class="row equal-panels">
-<!-- unified panel bit -->
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-<!-- image left bit -->
-<div class="col-sm-3">
-<div class="hover-swap">
-<p><img src="images/p3.png" class="img-responsive img-normal project-img">
-<img src="images/p3-1.png" class="img-responsive img-hover project-img"></p>
-</div>
-</div>
-<!-- text right bit -->
-<div class="col-sm-9">
-<p>
-Prelic <i>et al.</i><br> <b>Innexin expression and localization in the
-<i>Drosophila</i> antenna indicate gap junction or hemichannel
-involvement in antennal chemosensory sensilla.</b>
+<p></p>
+<p style="font-size: small;">
+Given this budding subject and field of research, I also propose a wide range of novel considerations, hypotheses and practical research directions for future exploration of animal sensory systems, especially given notable (though unreported) parallels among various sensory systems.
 </p>
-<p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- dissertation end -->
+<!-- innexin paper start -->
+<div class="card my-3">
+<div class="card-body">
+<div class="d-flex align-items-center gap-0">
+<!-- IMAGE COLUMN -->
+<div style="flex: 0 0 35%; max-width: 35%;">
+<div class="hover-swap">
+<p><img src="images/p3.png" class="img-fluid img-normal project-img"> <img src="images/p3-1.png" class="img-fluid img-hover project-img"></p>
+</div>
+</div>
+<!-- CONTENT COLUMN -->
+<div style="flex: 1;">
+<h4 class="card-title">
+Innexin expression and localization in the <i>Drosophila</i> antenna indicate gap junction or hemichannel involvement in antennal chemosensory sensilla.
+</h4>
+<h6 class="card-subtitle mb-2 text-muted">
+Prelic <i>et al.</i>
+</h6>
+<p class="card-text">
 Published in <i>Cell and Tissue Research</i> in 2024.
 </p>
 <p>
-<a href="https://doi.org/10.1007/s00441-024-03909-3" target="_blank" class="btn btn-success btn-xs">Link</a>
-<a href="`https://static-content.springer.com/esm/art%3A10.1007%2Fs00441-024-03909-3/MediaObjects/441_2024_3909_MOESM1_ESM.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">Supplementary
-data</a>
+<a href="https://doi.org/10.1007/s00441-024-03909-3" target="_blank" class="btn btn-success btn-sm">Link</a> <a href="https://static-content.springer.com/esm/art%3A10.1007%2Fs00441-024-03909-3/MediaObjects/441_2024_3909_MOESM1_ESM.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Supplementary data</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.1007/s00441-024-03909-3" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="true"></span>
+<p><span class="__dimensions_badge_embed__" data-doi="10.1007/s00441-024-03909-3" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Research Article: 28 pages, 7 figures, 4 supplementary figures)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+Olfactory system structures are highly conserved, with sensory neurons and adjacent cells closely apositioned, forming tight and encosed compartments. Whether gap junctions (direct cell-cell contacts) interconnect the cells or compartments is unclear. Here I show <b>innexins</b> (which form hemichannels and gap junctions in invertebrates) are abundantly expressed in antennae of adult flies.
 </p>
-<!-- collapse bit start -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-Summary <span class="summary-meta">(Research Article: 28 pages, 7
-figures, 4 supplementary figures)</span>
-<button class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-target="#details3">
-Show </button>
-</h3>
-</div>
-<div id="details3" class="collapse">
-<div class="panel-body" style="font-size: 1.2rem;">
-<p>Olfactory system structures are highly conserved, with sensory
-neurons and adjacent cells closely apositioned, forming tight and
-encosed compartments. Whether gap junctions (direct cell-cell contacts)
-interconnect the cells or compartments is unclear. Here I show
-<b>innexins</b> (which form hemichannels and gap junctions in
-invertebrates) are abundantly expressed in antennae of adult flies.</p>
-<p>I discover innexin-specific patterns of expression and localization,
-with a majority strongly localizing to glial and other non-neuronal
-cells, shown with immunostaining and bioinformatic analyses. In a neuron
-backfilling (dye coupling) case study, I show no such interconnection
-exists on sensory neurons, implying that such channels are likely
-exclusive to non-neuronal cells. Based on these observations, I discuss
-how coupling of sensillum microenvironments or compartments may
-facilitate odor sensing as well as sensillum homeostasis.</p>
+<p style="font-size: small;">
+I discover innexin-specific patterns of expression and localization, with a majority strongly localizing to glial and other non-neuronal cells, shown with immunostaining and bioinformatic analyses. In a neuron backfilling (dye coupling) case study, I show no such interconnection exists on sensory neurons, implying that such channels are likely exclusive to non-neuronal cells. Based on these observations, I discuss how coupling of sensillum microenvironments or compartments may facilitate odor sensing as well as sensillum homeostasis.
+</p>
 </div>
 </div>
 </div>
 </div>
-<p><!-- end text right bit --></p>
-</div>
-<p><!-- end row --></p>
 </div>
 </div>
 </div>
-</div>
-<div class="row equal-panels">
-<!-- unified panel bit -->
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-<!-- image left bit -->
-<div class="col-sm-3">
+<!-- innexin paper end -->
+<!-- no-cGMP paper start -->
+<div class="card my-3">
+<div class="card-body">
+<div class="d-flex align-items-center gap-0">
+<!-- IMAGE COLUMN -->
+<div style="flex: 0 0 35%; max-width: 35%;">
 <div class="hover-swap">
-<p><img src="images/p2.png" class="img-responsive img-normal project-img">
-<img src="images/p2-1.png" class="img-responsive img-hover project-img"></p>
+<p><img src="images/p2.png" class="img-fluid img-normal project-img"> <img src="images/p2-1.png" class="img-fluid img-hover project-img"></p>
 </div>
 </div>
-<!-- text right bit -->
-<div class="col-sm-9">
-<p>
-Prelic <i>et al.</i><br> <b>Modulation of the NO‑cGMP pathway has no
-effect on olfactory responses in the <i>Drosophila</i> antenna.</b>
-</p>
-<p>
+<!-- CONTENT COLUMN -->
+<div style="flex: 1;">
+<h4 class="card-title">
+Modulation of the NO‑cGMP pathway has no effect on olfactory responses in the <i>Drosophila</i> antenna.
+</h4>
+<h6 class="card-subtitle mb-2 text-muted">
+Prelic <i>et al.</i>
+</h6>
+<p class="card-text">
 Published in <i>Frontiers in Cellular Neuroscience</i> in 2023.
 </p>
 <p>
-<a href="https://doi.org/10.3389/fncel.2023.1180798" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-xs">Link</a>
-<a href="https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2023.1180798/full#supplementary-material" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">Supplementary
-data</a>
+<a href="https://doi.org/10.3389/fncel.2023.1180798" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">Link</a> <a href="https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2023.1180798/full#supplementary-material" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Supplementary data</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.3389/fncel.2023.1180798" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="true"></span>
+<p><span class="__dimensions_badge_embed__" data-doi="10.3389/fncel.2023.1180798" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Research Article: 24 pages, 6 figures, 5 supplementary figures)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+<strong>Nitric oxide (NO) signaling</strong> is a ubiquitous mechanism by which cells activity may be potentiated. Here, I use optical and electrophysiological techniques in live antennal tissue to investigate whether NO signaling functions in the olfactory organs of insects. I first demonstrate the presence of NO signaling machinery in antennal tissue. Next, by applying various modulators of the NO-cGMP pathway in open tissue, I show that olfactory responses are unaffected by a wide panel of inhibitors and activators of this pathway, over short and long timescales. This is contrary to expectations, as insect olfactory receptors have been shown to be modulated by cGMP <i>in vitro</i>.
 </p>
-<!-- collapse bit start -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-Summary <span class="summary-meta">(Research Article: 24 pages, 6
-figures, 5 supplementary figures)</span>
-<button class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-target="#details4">
-Show </button>
-</h3>
-</div>
-<div id="details4" class="collapse">
-<div class="panel-body" style="font-size: 1.2rem;">
-<p>Nitric oxide (NO) signaling is a ubiquitous mechanism by which cells
-activity may be potentiated. Here, I use optical and
-electrophysiological techniques in live antennal tissue to investigate
-whether NO signaling functions in the olfactory organs of insects. I
-first demonstrate the presence of NO signaling machinery in antennal
-tissue. Next, by applying various modulators of the NO-cGMP pathway in
-open tissue, I show that olfactory responses are unaffected by a wide
-panel of inhibitors and activators of this pathway, over short and long
-timescales. This is contrary to expectations, as insect olfactory
-receptors have been shown to be modulated by cGMP <i>in vitro</i>.</p>
-<p>I then examine the action of the cyclic nucleotide family of
-messengers, previously shown to modulate olfactory receptor
-functionality, and find that - contrary to expectation - various kinds
-of applications of cGMP have no effect on olfactory responses <i>in
-vivo</i> in microinjection, calcium imaging and single sensillum
-recording experiments. This is differentiated from cAMP effects which
-confer effects on neuron responses.</p>
-<p>In living animals, NO signals may play no role as regulators of
-olfactory transduction in insects, though may play other physiological
-roles in insect sensory organs. Several explanations and hypotheses are
-posed.</p>
+<p style="font-size: small;">
+I then examine the action of the <strong>cyclic nucleotide</strong> family of messengers, previously shown to modulate olfactory receptor functionality, and find that - contrary to expectation - various kinds of applications of cGMP have no effect on olfactory responses <i>in vivo</i> in microinjection, calcium imaging and single sensillum recording experiments. This is differentiated from cAMP effects which confer effects on neuron responses.
+</p>
+<p style="font-size: small;">
+In living animals, NO signals may play no role as regulators of olfactory transduction in insects, though may play other physiological roles in insect sensory organs. Several explanations and hypotheses are posed.
+</p>
 </div>
 </div>
 </div>
 </div>
-<p><!-- end text right bit --></p>
-</div>
-<p><!-- end row --></p>
 </div>
 </div>
 </div>
-</div>
-<div class="row equal-panels">
-<!-- unified panel bit -->
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-<!-- image left bit -->
-<div class="col-sm-3">
+<!-- no-cGMP paper end -->
+<!-- support cell paper start -->
+<div class="card my-3">
+<div class="card-body">
+<div class="d-flex align-items-center gap-0">
+<!-- IMAGE COLUMN -->
+<div style="flex: 0 0 35%; max-width: 35%;">
 <div class="hover-swap">
-<p><img src="images/p1.png" class="img-responsive img-normal project-img">
-<img src="images/p1-1.png" class="img-responsive img-hover project-img"></p>
+<p><img src="images/p1.png" class="img-fluid img-normal project-img"> <img src="images/p1-1.png" class="img-fluid img-hover project-img"></p>
 </div>
 </div>
-<!-- text right bit -->
-<div class="col-sm-9">
-<p>
-Prelic <i>et al.</i><br> <b>Functional interaction between
-<i>Drosophila</i> olfactory sensory neurons and their support cells.</b>
-</p>
-<p>
+<!-- CONTENT COLUMN -->
+<div style="flex: 1;">
+<h4 class="card-title">
+Functional interaction between <i>Drosophila</i> olfactory sensory neurons and their support cells.
+</h4>
+<h6 class="card-subtitle mb-2 text-muted">
+Prelic <i>et al.</i>
+</h6>
+<p class="card-text">
 Published in <i>Frontiers in Cellular Neuroscience</i> in 2022.
 </p>
 <p>
-<a href="https://doi.org/10.3389/fncel.2021.789086" target="_blank" class="btn btn-success btn-xs">Link</a>
-<a href="https://dx.doi.org/10.17617/3.7m" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">Supplementary
-data (EDMOND)</a>
+<a href="https://doi.org/10.3389/fncel.2021.789086" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">Link</a> <a href="https://dx.doi.org/10.17617/3.7m" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Supplementary data (EDMOND)</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.3389/fncel.2021.789086" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="true"></span>
+<p><span class="__dimensions_badge_embed__" data-doi="10.3389/fncel.2021.789086" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Research Article: 23 pages, 6 figures, 5 supplementary figures)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+<strong>Abstract:</strong> Insects detect volatile chemicals using antennae, which house a vast variety of olfactory sensory neurons (OSNs) that innervate hair-like structures called sensilla where odor detection takes place. In addition to OSNs, the antenna also hosts various support cell types. These include the triad of trichogen, tormogen, and thecogen support cells that lie adjacent to their respective OSNs. The arrangement of OSN supporting cells occurs stereotypically for all sensilla and is widely conserved in evolution. While insect chemosensory neurons have received considerable attention, little is known about the functional significance of the cells that support them. For instance, it remains unknown whether support cells play an active role in odor detection, or only passively contribute to homeostasis, e.g., by maintaining sensillum lymph composition. To investigate the functional interaction between OSNs and support cells, we used optical and electrophysiological approaches in <i>Drosophila</i>.
 </p>
-<!-- collapse bit start -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-Summary <span class="summary-meta">(Research Article: 23 pages, 6
-figures, 5 supplementary figures)</span>
-<button class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-target="#details5">
-Show </button>
-</h3>
-</div>
-<div id="details5" class="collapse">
-<div class="panel-body" style="font-size: 1.2rem;">
-<p><strong>Abstract:</strong> Insects detect volatile chemicals using
-antennae, which house a vast variety of olfactory sensory neurons (OSNs)
-that innervate hair-like structures called sensilla where odor detection
-takes place. In addition to OSNs, the antenna also hosts various support
-cell types. These include the triad of trichogen, tormogen, and thecogen
-support cells that lie adjacent to their respective OSNs. The
-arrangement of OSN supporting cells occurs stereotypically for all
-sensilla and is widely conserved in evolution. While insect chemosensory
-neurons have received considerable attention, little is known about the
-functional significance of the cells that support them. For instance, it
-remains unknown whether support cells play an active role in odor
-detection, or only passively contribute to homeostasis, e.g., by
-maintaining sensillum lymph composition. To investigate the functional
-interaction between OSNs and support cells, we used optical and
-electrophysiological approaches in <i>Drosophila</i>.</p>
-<p>First, we characterized the distribution of various supporting cells
-using genetic markers. By means of an <i>ex vivo</i> antennal
-preparation and genetically-encoded Ca<sup>2+</sup> and K<sup>+</sup>
-indicators, we then studied the activation of these auxiliary cells
-during odor presentation in adult flies. We observed acute responses and
-distinct differences in Ca<sup>+</sup> and K<sup>+</sup> fluxes between
-support cell types. Finally, we observed alterations in OSN responses
-upon thecogen cell ablation in mature adults. Upon inducible ablation of
-thecogen cells, we notice a gain in mechanical responsiveness to
-mechanical stimulations during single-sensillum recording, but a lack of
-change to the neuronal resting activity. Taken together, these results
-demonstrate that support cells play a more active and responsive role
-during odor processing than previously thought. Our observations thus
-reveal that support cells functionally interact with OSNs and may be
-important for the extraordinary ability of insect olfactory systems to
-dynamically and sensitively discriminate between odors in the turbulent
-sensory landscape of insect flight.</p>
-</div>
-</div>
-</div>
-</div>
-<p><!-- end text right bit --></p>
-</div>
-<p><!-- end row --></p>
+<p style="font-size: small;">
+First, we characterized the distribution of various supporting cells using genetic markers. By means of an <i>ex vivo</i> antennal preparation and genetically-encoded Ca<sup>2+</sup> and K<sup>+</sup> indicators, we then studied the activation of these auxiliary cells during odor presentation in adult flies. We observed acute responses and distinct differences in Ca<sup>+</sup> and K<sup>+</sup> fluxes between support cell types. Finally, we observed alterations in OSN responses upon thecogen cell ablation in mature adults. Upon inducible ablation of thecogen cells, we notice a gain in mechanical responsiveness to mechanical stimulations during single-sensillum recording, but a lack of change to the neuronal resting activity. Taken together, these results demonstrate that support cells play a more active and responsive role during odor processing than previously thought. Our observations thus reveal that support cells functionally interact with OSNs and may be important for the extraordinary ability of insect olfactory systems to dynamically and sensitively discriminate between odors in the turbulent sensory landscape of insect flight.
+</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="as-supporting-author" class="section level5">
-<h5>As supporting author:</h5>
+</div>
+</div>
+<!-- support cell paper end -->
+</section>
+<section id="as-supporting-author" class="level5">
+<h5 data-anchor-id="as-supporting-author">As supporting author:</h5>
+<div class="card my-3">
+<div class="card-body">
 <div class="panel panel-default">
 <div class="panel-body">
 <p>
-Mokry <i>et al.</i> (2014). <b>Epigenetic regulation of immune tolerance
-in intestinal epithelium.</b> <i>Journal of Crohn’s and Colitis.</i>
-<a href="https://doi.org/10.1016/S1873-9946(14)50004-9" target="_blank" rel="noopener noreferrer">DOI
-link</a>.
+Mokry <i>et al.</i> (2014). <b>Epigenetic regulation of immune tolerance in intestinal epithelium.</b> <i>Journal of Crohn’s and Colitis.</i> <a href="https://doi.org/10.1016/S1873-9946(14)50004-9" target="_blank" rel="noopener noreferrer">DOI link</a>.
 </p>
 <p>
-Meddens <i>et al.</i> (2019). <b>Stem cells are the principal intestinal
-epithelial responders to bacterial antigens.</b> <i>SSRN Electronic
-Journal: Cell Stem Cell.</i>
-<a href="https://doi.org/10.2139/ssrn.3485163" target="_blank" rel="noopener noreferrer">DOI
-link</a>.
+Meddens <i>et al.</i> (2019). <b>Stem cells are the principal intestinal epithelial responders to bacterial antigens.</b> <i>SSRN Electronic Journal: Cell Stem Cell.</i> <a href="https://doi.org/10.2139/ssrn.3485163" target="_blank" rel="noopener noreferrer">DOI link</a>.
 </p>
 </div>
-<div class="panel-footer" style="font-size: 1.2rem;">
-<p>I was involved in initial stages performing exploratory qRT-PCR
-experiments establishing the research story basis, and assisted in
-proofing first drafts of the paper. The work was delayed as it went
-through several lead author changes.</p>
-<p>My results showed relative changes in mRNA expression of inflammatory
-markers in intestinal (duodenum, ileum and colon) samples following
-bacterial antigen exposure. This result served as springboard for
-further investigations demonstrating that intestinal stem cells (in
-contrast to enterocytes) are local immune response mediators in the
-large intestinal epithelium, involving the WNT pathway.</p>
-<p>The complete work was eventually published many years later
-<a href="https://doi.org/10.3389/fimmu.2025.1677943" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<div class="my-bg-collapser callout callout-style-default callout-note no-icon callout-titled" style="border-left: 2px solid #00000080;">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span class="text-primary">Summary</span><br><span class="text-secondary small">(Research assistance)</span>
 </div>
-<hr />
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-</div>
-<div id="select-conference-talks" class="section level3">
-<h3><strong>Select conference talks</strong></h3>
-<div class="panel panel-default">
-<div class="panel-body" style="background: rgba(239,183,62,0.04);">
-<p>
-<b>“Novel cell-cell interactions between olfactory sensory neurons and
-their supporting cells!”</b>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p style="font-size: small;">
+I was involved in initial stages performing exploratory qRT-PCR experiments establishing the research story basis, and assisted in proofing first drafts of the paper. The work was delayed as it went through several lead author changes.
 </p>
-<p>
-21st IMPRS Symposium 2022, Chemical Communication in Ecological
-Systems<br> Dornburg, Germany
-<img src="https://flagcdn.com/w20/de.png" alt="DE">
+<p style="font-size: small;">
+My results showed relative changes in mRNA expression of inflammatory markers in intestinal (duodenum, ileum and colon) samples following bacterial antigen exposure. This result served as springboard for further investigations demonstrating that intestinal stem cells (in contrast to enterocytes) are local immune response mediators in the large intestinal epithelium, involving the WNT pathway.
+</p>
+<p style="font-size: small;">
+The complete work was eventually published many years later <a href="https://doi.org/10.3389/fimmu.2025.1677943" target="_blank" rel="noopener noreferrer">here</a>.
 </p>
 </div>
 </div>
-<div class="panel panel-default">
-<div class="panel-body" style="background: rgba(239,183,62,0.04);">
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="select-conference-talks" class="level3">
+<h3 data-anchor-id="select-conference-talks"><strong>Select conference talks</strong></h3>
+<div class="bg-light border rounded p-3 pb-0 my-2" style="text-align: center;">
 <p>
-<b>“Functional interactions between (non-)neuronal cells in the
-Drosophila olfactory system”</b>
+<b>“Novel cell-cell interactions between olfactory sensory neurons and their supporting cells!”</b>
 </p>
 <p>
-European Chemoreception Research Organization (ECRO) 2021 conference<br>
-Cascais, Portugal <img src="https://flagcdn.com/w20/pt.png" alt="PT">
+21st IMPRS Symposium 2022, Chemical Communication in Ecological Systems<br> Dornburg, Germany <img src="https://flagcdn.com/w20/de.png" alt="DE">
 </p>
 </div>
+<div class="bg-light border rounded p-3 pb-0 my-2" style="text-align: center;">
+<p>
+<b>“Functional interactions between (non-)neuronal cells in the Drosophila olfactory system”</b>
+</p>
+<p>
+European Chemoreception Research Organization (ECRO) 2021 conference<br> Cascais, Portugal <img src="https://flagcdn.com/w20/pt.png" alt="PT">
+</p>
 </div>
-<div class="panel panel-default">
-<div class="panel-body" style="background: rgba(239,183,62,0.04);">
+<div class="bg-light border rounded p-3 pb-0 my-2" style="text-align: center;">
 <p>
 <b>“The Amazing Apparatus – Insect Antennae!”</b>
 </p>
 <p>
-July 2020 Lecture of the Institute Seminar Series (Max Planck Institute
-for Chemical Ecology)<br> Livestreamed and published <a
-href="https://www.youtube.com/watch?v=LDpFiLVOevY">online</a>
-<img src="https://flagcdn.com/w320/un.png" alt="WORLD" height="13px">
+July 2020 Lecture of the Institute Seminar Series (Max Planck Institute for Chemical Ecology)<br> Livestreamed and published <a href="https://www.youtube.com/watch?v=LDpFiLVOevY">online</a> <img src="https://flagcdn.com/w320/un.png" alt="WORLD" height="13px">
 </p>
 </div>
-</div>
-<div class="panel panel-default">
-<div class="panel-body" style="background: rgba(239,183,62,0.04);">
+<div class="bg-light border rounded p-3 pb-0 my-2" style="text-align: center;">
 <p>
-<b>“Molecular profiling of sensory cells using single-nucleus
-transcriptomics”</b>
+<b>“Molecular profiling of sensory cells using single-nucleus transcriptomics”</b>
 </p>
 <p>
-Insect Chemical Ecology Conference 2019, ICIPE<br> Nairobi, Kenya
-<img src="https://flagcdn.com/w20/ke.png" alt="KE">
+Insect Chemical Ecology Conference 2019, ICIPE<br> Nairobi, Kenya <img src="https://flagcdn.com/w20/ke.png" alt="KE">
 </p>
 </div>
-</div>
-<div class="panel panel-default">
-<div class="panel-body" style="background: rgba(239,183,62,0.04);">
+<div class="bg-light border rounded p-3 pb-0 my-2" style="text-align: center;">
 <p>
-<b>“Single-nucleus transcriptomics of olfactory neurons and support
-cells in the Drosophila antenna”</b>
+<b>“Single-nucleus transcriptomics of olfactory neurons and support cells in the Drosophila antenna”</b>
 </p>
 <p>
-18th IMPRS Symposium 2019<br> Jena, Germany
-<img src="https://flagcdn.com/w20/de.png" alt="DE">
+18th IMPRS Symposium 2019<br> Jena, Germany <img src="https://flagcdn.com/w20/de.png" alt="DE">
 </p>
 </div>
-</div>
-<hr />
-</div>
-<div id="poster-example" class="section level3">
-<h3><strong>Poster example</strong></h3>
+<hr>
+</section>
+<section id="poster-example" class="level3">
+<h3 data-anchor-id="poster-example"><strong>Poster example</strong></h3>
+<div class="border rounded p-3 my-3">
 <div style="text-align: center; font-size: 1.2rem;">
-<p><img src="images/poster.jpeg"
-style="border: 5px solid #ffffff;;width:75.0%" /></p>
+<p><img src="images/poster.jpeg" class="img-fluid" style="border: 5px solid #ffffff;;width:75.0%"></p>
 </div>
-<div
-style="text-align: center; width: 75%; margin: 0 auto; font-size: 1.2rem;">
-<p>A showcase of experimental results from 2021 involving <span
-class="text-info">live Ca<sup>2+</sup> imaging</span> and <span
-class="text-success">custom K<sup>+</sup> imaging</span> of both
-neuronal and non-neuronal cell activity during sensory (odor)
-stimulation, and <span class="text-danger">electrophysiological
-recordings</span> of sensory responses in flies where olfactory support
-cells are intact or absent. This was achieved via <span
-class="text-warning">cell type-targeted, heat-induced ablation using the
-GAL4/UAS binary expression system</span>, post-developmentally, to
-control for complex confoundments.</p>
+<div style="text-align: center; width: 75%; margin: 0 auto; font-size: 0.8rem;">
+<p>A showcase of experimental results from 2021 involving <span class="text-info">live Ca<sup>2+</sup> imaging</span> and <span class="text-success">custom K<sup>+</sup> imaging</span> of both neuronal and non-neuronal cell activity during sensory (odor) stimulation, and <span class="text-danger">electrophysiological recordings</span> of sensory responses in flies where olfactory support cells are intact or absent. This was achieved via <span class="text-warning">cell type-targeted, heat-induced ablation using the GAL4/UAS binary expression system</span>, post-developmentally, to control for complex confoundments.</p>
 </div>
-<div style="font-size: 1.2rem;">
-<p>In 2019, at the Annual Institute Symposium of the Max Planck
-Institute for Chemical Ecology, I presented a poster entitled
-<em><strong>Revealing fine details in olfactory sensilla: single-nucleus
-RNA-seq and the role of support cells in olfaction</strong></em>,
-showcasing experimental results involving the first-ever single-cell
-transcriptomic dataset of an insect antenna I made using nuclei isolated
-from <em>Drosophila melanogaster</em>, and sequenced using the
-microfluidic droplet-based <em>10XGenomics</em> platform. The poster
-also included neuron backfilling and dye tracing results, revealing
-ultrastructures in insect sensilla newly observed with confocal
-fluorescence imaging.</p>
 </div>
-<hr />
+<div class="border rounded p-3 my-3">
+<div style="text-align: justify;">
+<p>In 2019, at the Annual Institute Symposium of the Max Planck Institute for Chemical Ecology, I presented a poster entitled <em><strong>Revealing fine details in olfactory sensilla: single-nucleus RNA-seq and the role of support cells in olfaction</strong></em>, showcasing experimental results involving the first-ever single-cell transcriptomic dataset of an insect antenna I made using nuclei isolated from <em>Drosophila melanogaster</em>, and sequenced using the microfluidic droplet-based <em>10XGenomics</em> platform. The poster also included neuron backfilling and dye tracing results, revealing ultrastructures in insect sensilla newly observed with confocal fluorescence imaging.</p>
 </div>
-<div id="preprints" class="section level3">
-<h3><strong>Preprints</strong></h3>
-<div id="as-lead-author-1" class="section level5">
-<h5>As lead author:</h5>
+</div>
+<hr>
+</section>
+<section id="preprints" class="level3">
+<h3 data-anchor-id="preprints"><strong>Preprints</strong></h3>
+<section id="as-lead-author-1" class="level5">
+<h5 data-anchor-id="as-lead-author-1">As lead author:</h5>
+<div class="bg-light border rounded p-3 my-3">
 <div class="panel panel-default">
 <div class="panel-body" style="background: rgba(174,167,159,0.04);">
 <p>
-Prelic, Jain <i>et al.</i> <br> <b>Expression of <i>Drosophila
-melanogaster</i> V-ATPases in Olfactory Sensillum Support Cells.</b>
+Prelic, Jain <i>et al.</i><br> <b>Expression of <i>Drosophila melanogaster</i> V-ATPases in Olfactory Sensillum Support Cells.</b>
 </p>
 <p>
-Made available in 2024 at <i>Preprints</i>, 2024111965.
+Made available in 2024 at <i>Preprints</i>.
 </p>
 <p>
-<a href="https://www.preprints.org/manuscript/202411.1965" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">URL</a>
-<a href="https://doi.org/10.20944/preprints202411.1965.v1" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">DOI</a>
+<a href="https://www.preprints.org/manuscript/202411.1965" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">URL</a> <a href="https://doi.org/10.20944/preprints202411.1965.v1" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">DOI</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.20944/preprints202411.1965.v1" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="false"></span>
-</p>
+<p><span class="__dimensions_badge_embed__" data-doi="10.20944/preprints202411.1965.v1" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
 </div>
 </div>
+</div>
+<div class="bg-light border rounded p-3 my-3">
 <div class="panel panel-default">
 <div class="panel-body" style="background: rgba(174,167,159,0.04);">
 <p>
-Prelic <i>et al.</i> <br> <b>Functional interaction between Drosophila
-olfactory sensory neurons and their support cells.</b>
+Prelic <i>et al.</i><br> <b>Functional interaction between Drosophila olfactory sensory neurons and their support cells.</b>
 </p>
 <p>
 Made available in 2021 at <i>bioRxiv</i>.
 </p>
 <p>
-<a href="https://www.biorxiv.org/content/10.1101/2021.10.04.463011v1" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">URL</a>
-<a href="https://doi.org/10.1101/2021.10.04.463011" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">DOI</a>
+<a href="https://www.biorxiv.org/content/10.1101/2021.10.04.463011v1" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">URL</a> <a href="https://doi.org/10.1101/2021.10.04.463011" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">DOI</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__"
-data-doi="10.1101/2021.10.04.463011" data-legend="hover-right"
-data-style="small_rectangle" data-hide-zero-citations="false"></span>
-</p>
+<p><span class="__dimensions_badge_embed__" data-doi="10.1101/2021.10.04.463011" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
 </div>
 </div>
 </div>
-<div id="as-supporting-author-1" class="section level5">
-<h5>As supporting author:</h5>
+</section>
+<section id="as-supporting-author-1" class="level5">
+<h5 data-anchor-id="as-supporting-author-1">As supporting author:</h5>
+<div class="bg-light border rounded p-3 my-3">
 <div class="panel panel-default">
 <div class="panel-body" style="background: rgba(174,167,159,0.04);">
 <p>
-Meddens <i>et al.</i> <br> <b>Stem Cells are the Principal Intestinal
-Epithelial Responders to Bacterial Antigens.</b>
+Meddens <i>et al.</i> <br> <b>Stem Cells are the Principal Intestinal Epithelial Responders to Bacterial Antigens.</b>
 </p>
 <p>
-Under review at <i>Cell Stem Cell</i>, made available at <i>SSRN
-Electronic Journal</i> in 2019.
+Under review at <i>Cell Stem Cell</i>, made available at <i>SSRN Electronic Journal</i> in 2019.
 </p>
 <p>
-<a href="https://ssrn.com/abstract=3485163" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">URL</a>
-<a href="http://dx.doi.org/10.2139/ssrn.3485163" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-xs">DOI</a>
+<a href="https://ssrn.com/abstract=3485163" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">URL</a> <a href="http://dx.doi.org/10.2139/ssrn.3485163" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-sm">DOI</a>
 </p>
-<p>
-<span class="__dimensions_badge_embed__" data-doi="10.2139/ssrn.3485163"
-data-legend="hover-right" data-style="small_rectangle"
-data-hide-zero-citations="false"></span>
-</p>
+<p><span class="__dimensions_badge_embed__" data-doi="10.2139/ssrn.3485163" data-legend="hover-right" data-style="large_rectangle" data-hide-zero-citations="true"></span></p>
 </div>
 </div>
-<hr />
 </div>
-<div id="manuscripts-in-preparation" class="section level4">
-<h4>Manuscripts (in preparation)</h4>
+<hr>
+</section>
+<section id="manuscripts-in-preparation" class="level4">
+<h4 data-anchor-id="manuscripts-in-preparation">Manuscripts (in preparation)</h4>
+<div class="border rounded p-3 my-3">
 <div class="panel panel-default">
 <div class="panel-body">
 <p>
-Prelic, S. <br> <b>Non-neuronal cell functions in the <i>Drosophila</i>
-antenna and other insect sensory systems.</b> (working title)
+Prelic, S.<br> <b>Non-neuronal cell functions in the <i>Drosophila</i> antenna and other insect sensory systems.</b> (working title)
 </p>
 <p>
 Review article. <i>In preparation.</i>
 </p>
 </div>
 </div>
-<hr />
+</div>
+<hr>
 <div style="text-align: right;">
 <a href="#top" class="btn btn-link">back to top</a>
 </div>
-</div>
-</div>
-</div>
 
-<script async src="https://integration-badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
-<script>
-$(function () {
-  var $target = $('#details1');
-  var $btn = $('[data-target="#details1"]');
 
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script async="" src="https://integration-badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
   });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details2');
-  var $btn = $('[data-target="#details2"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details3');
-  var $btn = $('[data-target="#details3"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details4');
-  var $btn = $('[data-target="#details4"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details5');
-  var $btn = $('[data-target="#details5"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details6');
-  var $btn = $('[data-target="#details6"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details7');
-  var $btn = $('[data-target="#details7"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details8');
-  var $btn = $('[data-target="#details8"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
-
-<script>
-$(function () {
-  var $target = $('#details9');
-  var $btn = $('[data-target="#details9"]');
-
-  $target.on('shown.bs.collapse', function () {
-    $btn.text('Hide');
-  });
-
-  $target.on('hidden.bs.collapse', function () {
-    $btn.text('Show');
-  });
-});
-</script>
+  </script>
+</div> <!-- /content -->
 
 
 
-</div>
 
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
+</body></html>
