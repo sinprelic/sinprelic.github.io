@@ -35,6 +35,20 @@
     "text": "Quick find\n\n\n\nWork Experience\n\n\nEducation (training, works, courses, certificates)\n\n\nScientific Publications\n\n\nSkills\n\n\nAwards\n\n\nTeaching\n\n\nVolunteer Work / Other"
   },
   {
+    "objectID": "article-stats.html",
+    "href": "article-stats.html",
+    "title": "",
+    "section": "",
+    "text": "For a goof, can we bring all of our publication metrics to one place?\n\nFor a goof? Why not.\nHere you’ll find data logged from a collection of custom-built scrapers that fetch stats from Dimensions, OpenAlex and journal- or server-specific metrics (e.g. stats kept on Springer Nature, Frontiers journals, preprint or data repo servers, etc.) to display them all neatly in one graph. Sorted new-old (top-bottom). Refreshes every 48 hours. How convenient!\n\n\n\n\n\nResearch item\n\n\nMetrics\n\n\n\n\nArticle\n\n\nType\n\n\nDimensions\n\n\nOpenAlex\n\n\nJournal/server-specific\n\n\n\n\n\n\nInsect antennal V-ATPases\n\n\nPublication\n\n\n\n\n\n\n\n\n \n\n\n\n\nPreprint\n\n\nN/A\n\n\n \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n \n\n\n\n\nInnexins (gap junctions) in Drosophila antennae and sensilla\n\n\nPublication\n\n\n\n\n\n\n\n\n \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n\n\n\n\n\nNO-cGMP pathway activity in Drosophila antennae\n\n\nPublication\n\n\n\n\n\n\n\n\n  \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n\n\n\n\n\nFunctional interaction between OSNs and support cells\n\n\nPublication\n\n\n\n\n\n\n\n\n  \n\n\n\n\nPreprint\n\n\n\n\n\n  \n\n\n\n\nData repo\n\n\nN/A\n\n\n\n\n\n\n\n\n\n\nGut stem cells as principal responders to bacterial antigens\n\n\nPreprint\n\n\nN/A\n\n\nN/A"
+  },
+  {
+    "objectID": "article-stats.html#article-stats",
+    "href": "article-stats.html#article-stats",
+    "title": "",
+    "section": "",
+    "text": "For a goof, can we bring all of our publication metrics to one place?\n\nFor a goof? Why not.\nHere you’ll find data logged from a collection of custom-built scrapers that fetch stats from Dimensions, OpenAlex and journal- or server-specific metrics (e.g. stats kept on Springer Nature, Frontiers journals, preprint or data repo servers, etc.) to display them all neatly in one graph. Sorted new-old (top-bottom). Refreshes every 48 hours. How convenient!\n\n\n\n\n\nResearch item\n\n\nMetrics\n\n\n\n\nArticle\n\n\nType\n\n\nDimensions\n\n\nOpenAlex\n\n\nJournal/server-specific\n\n\n\n\n\n\nInsect antennal V-ATPases\n\n\nPublication\n\n\n\n\n\n\n\n\n \n\n\n\n\nPreprint\n\n\nN/A\n\n\n \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n \n\n\n\n\nInnexins (gap junctions) in Drosophila antennae and sensilla\n\n\nPublication\n\n\n\n\n\n\n\n\n \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n\n\n\n\n\nNO-cGMP pathway activity in Drosophila antennae\n\n\nPublication\n\n\n\n\n\n\n\n\n  \n\n\n\n\nData repo\n\n\nN/A\n\n\nN/A\n\n\n\n\n\n\n\nFunctional interaction between OSNs and support cells\n\n\nPublication\n\n\n\n\n\n\n\n\n  \n\n\n\n\nPreprint\n\n\n\n\n\n  \n\n\n\n\nData repo\n\n\nN/A\n\n\n\n\n\n\n\n\n\n\nGut stem cells as principal responders to bacterial antigens\n\n\nPreprint\n\n\nN/A\n\n\nN/A"
+  },
+  {
     "objectID": "gallery.html",
     "href": "gallery.html",
     "title": "",

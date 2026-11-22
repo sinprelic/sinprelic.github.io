@@ -84,6 +84,17 @@ color: #999;
 opacity: 0.9;
 }
 
+/*table borders for the article metrics page*/
+.article-stats-table {
+  border-collapse: collapse;
+  background: #00000005;
+}
+.article-stats-table th,
+.article-stats-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.5rem;
+}
+
 /*changed default from ~40px*/
 ul {
   padding-left: 20px;
