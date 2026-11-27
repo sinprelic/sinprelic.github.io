@@ -22,10 +22,33 @@ body {
     padding-bottom: 0rem;
 }
 
+/*keeping the navbar-tools-dropdown-menu inside viewport; this is a third attempt, seems to be working!*/
+.quarto-navbar-tools .dropdown-menu {
+  left: auto !important;
+  right: 0 !important;
+  max-width: calc(100vw - 1rem);
+  max-height: calc(100vh - 5rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: none !important;
+}
+
 /*navbar background, brand/link text and color*/
 .navbar {
   background-color: #222222;
   border-color: #222222;
+}
+.navbar .dropdown-menu {
+  background-color: #222222;
+  border: 1px solid #ffcc0050;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  background-color: #3a3a3a;
+  color: #ffffff;
 }
 .navbar .navbar-brand {
   /* color: #E95420; */
